@@ -21,12 +21,20 @@ function Projects() {
       <SectionHeader>My Project</SectionHeader>
 
       <div>
-        {projectsData.map((project) => (
-          <div key={project.title}>{project.title}</div>
+        {projectsData.map((project, index) => (
+          <React.Fragment key={index}>
+            <Project {...project} />
+          </React.Fragment>
         ))}
       </div>
     </motion.section>
   );
 }
+
+type ProjectProps = (typeof projectsData)[number];
+
+const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
+  return <div>{title}</div>;
+};
 
 export default Projects;
