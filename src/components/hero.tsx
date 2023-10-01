@@ -31,29 +31,17 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className=" mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl">
-        <motion.p
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-        >
-          <span className=" font-bold">Hello, I'm Anirut</span>I am an
-          experienced <span className=" font-bold">Full Stack Developer</span>{" "}
-          with <span className="font-bold">6 years of experiences</span> based
-          in <span className=" font-bold">Australia.</span>
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.1,
-          }}
-          className=" font-normal text-2xl mt-4 !leading-10"
-        >
-          I possess a diverse range of technical skills. With a strong aptitude
-          for problem-solving, meticulous attention to detail, and a constant
-          drive to learn new skills, I excel in tackling complex challenges.
-        </motion.p>
-      </div>
+      <motion.h1
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        className=" mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+      >
+        <span className=" font-bold">Hello, I'm Anirut</span>I am an experienced{" "}
+        <span className=" font-bold">Full Stack Developer</span> with{" "}
+        <span className="font-bold">6 years of experiences</span> based in{" "}
+        <span className=" font-bold">Australia.</span>I possess a diverse range
+        of technical skills.
+      </motion.h1>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
