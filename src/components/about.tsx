@@ -1,13 +1,28 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "./section-header";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 function About() {
+  const { ref, inView } = useInView({
+    threshold: 1, // if the section display 75%, is true
+  }); // use this hook to detect elements in the view
+  const { setActiveSection } = useActiveSectionContext();
+
+  // set active section when the section display in the view
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection]);
+
   return (
     <motion.section
       id="about"
+      ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{
         opacity: 1,

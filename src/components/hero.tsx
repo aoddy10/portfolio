@@ -1,17 +1,32 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import profileImage from "../../public/profileImage.png";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Hero() {
+  const { ref, inView } = useInView({
+    threshold: 0.5, // if the section display 50%, is true
+  }); // use this hook to detect elements in the view
+  const { setActiveSection } = useActiveSectionContext();
+
+  // set active section when the section display in the view
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
+
   return (
     <section
+      ref={ref}
       id="home"
       className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-96"
     >
