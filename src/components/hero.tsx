@@ -11,7 +11,10 @@ import { FaGithubSquare } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section className=" mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-96"
+    >
       <div className="flex justify-center items-center">
         <div className="relative">
           <motion.div
