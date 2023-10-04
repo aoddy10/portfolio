@@ -1,17 +1,20 @@
 "use client";
 
-import React, { Children, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 
 import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
+import { useActiveSectionContext } from "@/context/active-section-context";
+
+type MenuType = (typeof links)[number]["name"];
 
 export default function Header() {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
-  const handleMenuSelect = (sectionName: string): void => {
-    setActiveSection(sectionName);
+  const handleMenuSelect = (selectedMenu: MenuType) => {
+    setActiveSection(selectedMenu);
   };
 
   return (
