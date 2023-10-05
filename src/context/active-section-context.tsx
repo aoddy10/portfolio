@@ -2,16 +2,17 @@
 
 import React, { createContext, useContext, useState } from "react";
 import { links } from "@/lib/data";
-
-type SectionName = (typeof links)[number]["name"];
+import { SectionNameType } from "@/lib/types/sectionType";
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
 };
 
 type ActiveSectionContextType = {
-  activeSection: SectionName;
-  setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+  activeSection: SectionNameType;
+  setActiveSection: React.Dispatch<React.SetStateAction<SectionNameType>>;
+  timeOfLastClick: number;
+  setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 };
 
 export const ActiveSectionContext =
@@ -20,13 +21,16 @@ export const ActiveSectionContext =
 function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
-  const [activeSection, setActiveSection] = useState<SectionName>("Home");
+  const [activeSection, setActiveSection] = useState<SectionNameType>("Home");
+  const [timeOfLastClick, setTimeOfLastClick] = useState(0); // use for keep track when user click the menu to temporary disable observer.
 
   return (
     <ActiveSectionContext.Provider
       value={{
         activeSection,
         setActiveSection,
+        timeOfLastClick,
+        setTimeOfLastClick,
       }}
     >
       {children}

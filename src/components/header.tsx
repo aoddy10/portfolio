@@ -7,14 +7,15 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
-
-type MenuType = (typeof links)[number]["name"];
+import type { SectionNameType } from "@/lib/types/sectionType";
 
 export default function Header() {
-  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
 
-  const handleMenuSelect = (selectedMenu: MenuType) => {
+  const handleMenuSelect = (selectedMenu: SectionNameType) => {
     setActiveSection(selectedMenu);
+    setTimeOfLastClick(Date.now());
   };
 
   return (
