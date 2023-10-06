@@ -20,7 +20,6 @@ export const useSectionInView = (
   }, [inView, setActiveSection, timeOfLastClick, sectionName]);
 
   return {
-    ref,
-    inView
+    ref
   };
 };
