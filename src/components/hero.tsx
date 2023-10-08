@@ -9,9 +9,16 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks/useSectionInView";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Hero() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const handleContactButtonClick = () => {
+    setActiveSection("Contact");
+    setTimeOfLastClick(Date.now());
+  };
 
   return (
     <section
@@ -64,12 +71,15 @@ export default function Hero() {
         <Link
           href="#contact"
           className=" group  bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition"
+          onClick={() => {
+            handleContactButtonClick;
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className=" opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer border border-black/10 "
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer borderBlack "
           href="/Anirut_Puangkingkaew_CV.pdf"
           download
         >
@@ -77,14 +87,14 @@ export default function Hero() {
           <HiDownload className=" opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
-          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
           href="https://linkedin.com/in/anirutpuangkingkaew"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
           href="https://github.com/aoddy10"
           target="_blank"
         >
