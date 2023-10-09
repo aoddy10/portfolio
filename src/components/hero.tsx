@@ -79,7 +79,7 @@ export default function Hero() {
           <BsArrowRight className=" opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer borderBlack "
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/Anirut_Puangkingkaew_CV.pdf"
           download
         >
@@ -87,14 +87,14 @@ export default function Hero() {
           <HiDownload className=" opacity-60 group-hover:translate-y-1 transition" />
         </a>
         <a
-          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://linkedin.com/in/anirutpuangkingkaew"
           target="_blank"
         >
           <BsLinkedin />
         </a>
         <a
-          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/aoddy10"
           target="_blank"
         >

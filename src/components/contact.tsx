@@ -31,7 +31,7 @@ function Contact() {
     >
       <SectionHeader>Contact</SectionHeader>
 
-      <p className="text-gray-700 -mt-6">
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me at email:{" "}
         <a
           className="underline font-semibold"
@@ -54,19 +54,19 @@ function Contact() {
 
           toast.success("Email sent successfully");
         }}
-        className="mt-10 flex flex-col gap-y-2"
+        className="mt-10 flex flex-col gap-y-2 dark:text-black"
       >
         <input
           type="email"
           name="senderEmail"
-          className="h-14 rounded-lg borderBlack px-4"
+          className="h-14 rounded-lg borderBlack px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your email"
           required
           maxLength={500}
         />
         <textarea
           name="message"
-          className="h-52 my-3 rounded-lg borderBlack p-4"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your message"
           required
           maxLength={500}
