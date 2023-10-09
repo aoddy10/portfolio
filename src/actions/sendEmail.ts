@@ -26,8 +26,9 @@ export const sendEmail = async (formData: FormData) => {
     };
   }
 
+    let data;
   try {
-    resend.emails
+    data = await resend.emails
       .send({
         from: "Portfolio - Contact Form <onboarding@resend.dev>", // email you want to use for sending email
         to: "vobi69p@gmail.com",
@@ -39,13 +40,12 @@ export const sendEmail = async (formData: FormData) => {
           senderEmail: senderEmail as string
         })
         
-      })
-      .then((res) => {
-        console.log(`Send email from contact form successfully with ${res}`);
       });
   } catch (error: unknown) {
     return {
       error: getErrorMessage(error),
     };
   }
+
+  return {data};
 };
