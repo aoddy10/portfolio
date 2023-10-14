@@ -12,7 +12,7 @@ import { useSectionInView } from "@/lib/hooks/useSectionInView";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Hero() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Home");
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const handleContactButtonClick = () => {
@@ -50,11 +50,11 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         className=" mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
-        <span className=" font-bold">Hello, I'm Anirut</span>I am an experienced{" "}
-        <span className=" font-bold">Full Stack Developer</span> with{" "}
-        <span className="font-bold">6 years of experiences</span> based in{" "}
-        <span className=" font-bold">Australia.</span>I possess a diverse range
-        of technical skills.
+        <span className=" font-bold">Hello, I'm Anirut.</span> I am a tech
+        person with 6 years of experiences as
+        <span className=" font-bold"> Full Stack Developer</span> and more than
+        10 years as <span className="font-bold">Computer System Engineer.</span>{" "}
+        I possess a diverse range of technical skills.
       </motion.h1>
 
       <motion.div
