@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState } from "react";
 import { links } from "@/lib/data";
-import { SectionNameType } from "@/lib/types/sectionType";
+import { SectionNameType } from "@/lib/types";
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
