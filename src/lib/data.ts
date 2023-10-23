@@ -82,7 +82,7 @@ export const projectsData = [
     description:
       "Created a project management system with ReactJS, Node.js, and MySQL integration, empowering managers with performance analysis and cost tools, highlighting my full-stack development expertise.",
     tags: ["React", "SQL", "MUI", "NodeJS", "Express framework", "JWT Authentication", "Docker container", "Git Version Control" ],
-    imageUrl: smmsReportApp,
+    imageUrl: projectManagementApp,
   },
   {
     title: "Student Management System",
