@@ -37,29 +37,70 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Bachelor of IT (Mobile application development)",
+    location: "Sydney, Australia",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Academy of Information Technology",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Oct 2017 - Jun 2020",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Diploma of IT (Software development)",
+    location: "Sydney, Australia",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Australian Computer Society",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jul 2016 - Jun 2017",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Bachelor in Business Administration",
+    location: "Chiang Mai, Thailand",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Maejo University",
+    icon: React.createElement(LuGraduationCap),
+    date: "May 1998 - Mar 2000",
+  },
+  {
+    title: "Computer network and systems engineer",
+    location: "Sydney, Australia",
+    description:
+      "Sydney College",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Feb 2021 – Present",
   },
+  {
+    title: "IT Consultant",
+    location: "Sydney, Australia",
+    description:
+      "Freelance",
+    icon: React.createElement(FaReact),
+    date: "Feb 2017 – Present",
+  },
+  {
+    title: "Full stack web developer",
+    location: "Sydney, Australia",
+    description:
+      "The Studio",
+    icon: React.createElement(FaReact),
+    date: "Feb 2020 - Mar 2022",
+  },
+  {
+    title: "Computer network and systems engineer",
+    location: "Sydney, Australia",
+    description:
+      "Australian International College",
+    icon: React.createElement(FaReact),
+    date: "Jun 2017 - Feb 2021",
+  },
+  {
+    title: "Computer system engineer",
+    location: "Chiang Mai, Thailand",
+    description:
+      "C.P.D. Sheetboard Co., Ltd.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Aug 2000 - Dec 2013",
+  },
+
 ] as const;
 
 export const projectsData = [
