@@ -46,19 +46,19 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
         <Image
           src={imageUrl}
           alt={title}
-          className="absolute top-8 -right-[20rem] h-[28rem] object-cover object-left-top rounded-lg shadow-2xl transition 
-        group-hover:scale-105 
-        group-hover:-translate-x-3 
-        group-hover:translate-y-3 
-        group-hover:-rotate-2 
+          className="absolute top-8 -right-[24rem] h-[30rem] object-cover object-left-top rounded-lg shadow-2xl transition 
+          group-hover:scale-105 
+          group-hover:-translate-x-3 
+          group-hover:translate-y-3 
+          group-hover:-rotate-2 
 
-        group-even:group-hover:translate-x-3 
-        group-even:group-hover:translate-y-3 
-        group-even:group-hover:rotate-2 
+          group-even:group-hover:translate-x-3 
+          group-even:group-hover:translate-y-3 
+          group-even:group-hover:rotate-2 
 
-        group-even:right-[initial] 
-        group-even:-left-[24rem] object-left-top object-cover
-        group-even:object-right-top"
+          group-even:right-[initial] 
+          group-even:-left-[24rem] object-left-top object-cover
+          group-even:object-right-top"
         />
       </section>
     </motion.div>

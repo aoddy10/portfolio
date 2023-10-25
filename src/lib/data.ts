@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
-import emergencyAlertApp from '../../public/emergency-alert.png'
+import urgence from '../../public/urgence.png'
 import massageBookingApp from '../../public/massage-booking-app.png'
 import smmsReportApp from '../../public/smms-report.png'
 import projectManagementApp from '../../public/weera-wissawakan.png'
@@ -109,26 +109,26 @@ export const projectsData = [
     description:
       "In a Python project, I showcased my AI and Machine Learning skills by utilizing TensorFlow to detect falls in Raspberry Pi camera footage and send real-time alerts through a Flutter app.",
     tags: ["Python", "Tensorflow", "Firebase", "Raspberry-PI", "Open-CV"],
-    imageUrl: emergencyAlertApp,
+    imageUrl: urgence,
   },
   {
     title: "Massage Booking Management System",
     description:
-      "Utilizing React Native, I designed a cross-platform mobile app for a massage business, simplifying booking and issue recording. It provides payment management and analytics tools, empowering data-driven decisions.",
+    "Utilizing React Native, I designed a cross-platform mobile app for a massage business, simplifying booking and issue recording. It provides payment management and analytics tools, empowering data-driven decisions.",
     tags: ["React Native", "Tailwind", "Redux", "NodeJS", "Express Framework", "JWT Authentication", "MongoDB", "Docker container", "Git Version Control"],
     imageUrl: massageBookingApp,
   },
   {
     title: "Project management System",
     description:
-      "Created a project management system with ReactJS, Node.js, and MySQL integration, empowering managers with performance analysis and cost tools, highlighting my full-stack development expertise.",
+    "Created a project management system with ReactJS, Node.js, and MySQL integration, empowering managers with performance analysis and cost tools, highlighting my full-stack development expertise.",
     tags: ["React", "SQL", "MUI", "NodeJS", "Express framework", "JWT Authentication", "Docker container", "Git Version Control" ],
     imageUrl: projectManagementApp,
   },
   {
     title: "Student Management System",
     description:
-      "Developed a Student Management System using AwareIM, expanded it with the SMMS Report via ReactJS and Node.js, and integrated it with Moodle for data transfer efficiency. Docker and Git were employed for deployment and collaboration.",
+    "Developed a Student Management System using AwareIM, expanded it with the SMMS Report via ReactJS and Node.js, and integrated it with Moodle for data transfer efficiency. Docker and Git were employed for deployment and collaboration.",
     tags: ["React", "SQL", "MUI", "NodeJS", "Express framework", "JWT Authentication", "Docker container", "Git Version Control" ],
     imageUrl: smmsReportApp,
   },
