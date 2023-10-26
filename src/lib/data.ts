@@ -37,6 +37,30 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Computer network and systems engineer",
+    location: "Sydney, Australia",
+    description:
+    "Sydney College",
+    icon: React.createElement(FaReact),
+    date: "Feb 2021 – Present",
+  },
+  {
+    title: "IT Consultant",
+    location: "Sydney, Australia",
+    description:
+    "Freelance",
+    icon: React.createElement(FaReact),
+    date: "Feb 2017 – Present",
+  },
+  {
+    title: "Full stack web developer",
+    location: "Sydney, Australia",
+    description:
+    "The Studio",
+    icon: React.createElement(FaReact),
+    date: "Feb 2020 - Mar 2022",
+  },
+  {
     title: "Bachelor of IT (Mobile application development)",
     location: "Sydney, Australia",
     description:
@@ -45,13 +69,30 @@ export const experiencesData = [
     date: "Oct 2017 - Jun 2020",
   },
   {
+    title: "Computer network and systems engineer",
+    location: "Sydney, Australia",
+    description:
+    "Australian International College",
+    icon: React.createElement(FaReact),
+    date: "Jun 2017 - Feb 2021",
+  },
+  {
     title: "Diploma of IT (Software development)",
     location: "Sydney, Australia",
     description:
-      "Australian Computer Society",
+    "Australian Computer Society",
     icon: React.createElement(LuGraduationCap),
     date: "Jul 2016 - Jun 2017",
   },
+  {
+    title: "Computer system engineer",
+    location: "Chiang Mai, Thailand",
+    description:
+    "C.P.D. Sheetboard Co., Ltd.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Aug 2000 - Dec 2013",
+  },
+  
   {
     title: "Bachelor in Business Administration",
     location: "Chiang Mai, Thailand",
@@ -60,47 +101,6 @@ export const experiencesData = [
     icon: React.createElement(LuGraduationCap),
     date: "May 1998 - Mar 2000",
   },
-  {
-    title: "Computer network and systems engineer",
-    location: "Sydney, Australia",
-    description:
-      "Sydney College",
-    icon: React.createElement(FaReact),
-    date: "Feb 2021 – Present",
-  },
-  {
-    title: "IT Consultant",
-    location: "Sydney, Australia",
-    description:
-      "Freelance",
-    icon: React.createElement(FaReact),
-    date: "Feb 2017 – Present",
-  },
-  {
-    title: "Full stack web developer",
-    location: "Sydney, Australia",
-    description:
-      "The Studio",
-    icon: React.createElement(FaReact),
-    date: "Feb 2020 - Mar 2022",
-  },
-  {
-    title: "Computer network and systems engineer",
-    location: "Sydney, Australia",
-    description:
-      "Australian International College",
-    icon: React.createElement(FaReact),
-    date: "Jun 2017 - Feb 2021",
-  },
-  {
-    title: "Computer system engineer",
-    location: "Chiang Mai, Thailand",
-    description:
-      "C.P.D. Sheetboard Co., Ltd.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Aug 2000 - Dec 2013",
-  },
-
 ] as const;
 
 export const projectsData = [
