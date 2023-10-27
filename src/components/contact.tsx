@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeader from "./section-header";
 import { useSectionInView } from "@/lib/hooks/useSectionInView";
 import { motion } from "framer-motion";
@@ -8,8 +8,14 @@ import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
+type contactFormType = {
+  email: string;
+  message: string;
+};
+
 function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [data, setData] = useState<contactFormType>({ email: "", message: "" });
 
   return (
     <motion.section
@@ -53,6 +59,9 @@ function Contact() {
           }
 
           toast.success("Email sent successfully");
+
+          // reset form
+          setData({ email: "", message: "" });
         }}
         className="mt-10 flex flex-col gap-y-2 dark:text-black"
       >
@@ -61,6 +70,10 @@ function Contact() {
           name="senderEmail"
           className="h-14 rounded-lg borderBlack px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your email"
+          value={data.email}
+          onChange={(e) => {
+            setData({ ...data, email: e.target.value });
+          }}
           required
           maxLength={500}
         />
@@ -68,6 +81,10 @@ function Contact() {
           name="message"
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your message"
+          value={data.message}
+          onChange={(e) => {
+            setData({ ...data, message: e.target.value });
+          }}
           required
           maxLength={500}
         />
