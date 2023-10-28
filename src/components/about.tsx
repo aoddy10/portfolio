@@ -20,7 +20,7 @@ function About() {
           delay: 0.2,
         },
       }}
-      className="mb-28 max-w-[45rem] text-center sm:mb-40 text-lg leading-8 scroll-mt-28"
+      className="mb-28 p-4 max-w-[45rem] text-center sm:mb-40 text-lg leading-8 scroll-mt-28"
     >
       <SectionHeader>About</SectionHeader>
 
