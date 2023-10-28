@@ -21,7 +21,7 @@ function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-28 px-2 sm:mb-28 scroll-mt-28 w-[min(100%,38rem)] text-center"
+      className="mb-28 px-2 sm:mb-28 scroll-mt-28 w-[min(100%,38rem)] flex flex-col items-center"
       initial={{
         opacity: 0,
       }}
@@ -63,7 +63,7 @@ function Contact() {
           // reset form
           setData({ email: "", message: "" });
         }}
-        className="mt-10 flex flex-col items-center sm:items-start gap-y-2 dark:text-black"
+        className="mt-10 sm:items-start gap-y-2 dark:text-black"
       >
         <input
           type="email"
