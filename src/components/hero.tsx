@@ -24,7 +24,8 @@ export default function Hero() {
     <section
       ref={ref}
       id="home"
-      className=" bg-[var(--primary-white)] flex items-center flex-col justify-center p-4 py-24 sm:h-screen sm:w-screen"
+      className=" bg-[var(--primary-white)] flex items-center flex-col justify-center p-4 py-24 sm:h-screen sm:w-screen
+      dark:bg-[var(--primary-black)]"
     >
       {/* avatar */}
       <div className="flex justify-center items-center">
@@ -40,7 +41,7 @@ export default function Hero() {
             <Image
               src={profileImage}
               alt="Profile Image"
-              className="h-32 w-32 rounded-full object-cover shadow-xl"
+              className="h-40 w-40 rounded-full object-cover shadow-xl"
             />
           </motion.div>
         </div>
@@ -52,22 +53,26 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         className="sm:max-w-[50rem] mt-8 flex flex-col items-center"
       >
-        <h1 className=" text-3xl mb-4 sm:text-4xl !leading-[150%] sm:text-center ">
-          <span className=" font-bold">Hello, I'm Anirut.</span> I am a tech
-          person with 6 years of experiences as
-          <span className=" font-bold"> Full Stack Developer</span> and more
-          than 10 years as{" "}
-          <span className="font-bold">Computer System Engineer.</span>
+        <h1 className=" text-3xl mb-4 sm:text-4xl !leading-[150%] text-center ">
+          <span className=" font-bold t-gradient ">Hello, I'm Anirut.</span> I
+          am a tech person with 6 years of experiences as
+          <span className=" font-bold t-gradient">
+            {" "}
+            Full Stack Developer
+          </span>{" "}
+          and more than 10 years as{" "}
+          <span className="font-bold t-gradient">
+            Computer System Engineer.
+          </span>
         </h1>
-        <p className="sm:max-w-[42rem]">
-          My journey in technology has been marked by a commitment to excellence
-          and a passion for creating impactful solutions. I possess a deep
-          understanding of both front-end and back-end development, utilizing
-          development skills like ReactJS, React Native, Next.js and NodeJS to
-          build high-performance web applications and software systems. In the
-          realm of Computer System and Networking Engineering, I have designed
-          and maintained resilient IT infrastructures, ensuring high
-          availability and efficiency.
+        <p
+          className="sm:max-w-[42rem] text-center font-light
+        dark:font-thin"
+        >
+          I have a strong background in technology, excelling in both front-end
+          and back-end development and specializing in high-performance web
+          applications, software systems, and resilient IT infrastructure design
+          and maintenance.
         </p>
       </motion.section>
 
@@ -85,32 +90,35 @@ export default function Hero() {
       >
         <Link
           href="#contact"
-          className=" group bg-gradient text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition"
+          className=" group bg-[var(--secondary-black)] text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition font-thin
+          dark:bg-[var(--secondary-white)] dark:text-[var(--secondary-black)] dark:font-light"
           onClick={() => {
             handleContactButtonClick;
           }}
         >
-          Contact me here{" "}
+          GET IN TOUCH{" "}
           <BsArrowRight className=" opacity-70 group-hover:translate-x-1 transition" />
         </Link>
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-transparent px-7 py-3 flex items-center gap-2 rounded-full outline-none border border-[var(--secondary-black)] font-light focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer 
+           dark:bg-white/10 dark:font-thin"
           href="/Anirut_Puangkingkaew_CV.pdf"
           download
         >
           Download CV{" "}
           <HiDownload className=" opacity-60 group-hover:translate-y-1 transition" />
         </a>
+
         <div className=" inline-flex space-x-3 justify-center">
           <a
-            className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="  p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-[--secondary-black] bg-transparent dark:bg-white/10 dark:text-white/60"
             href="https://linkedin.com/in/anirutpuangkingkaew"
             target="_blank"
           >
             <BsLinkedin />
           </a>
           <a
-            className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            className="  p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-[--secondary-black] bg-transparent dark:bg-white/10 dark:text-white/60"
             href="https://github.com/aoddy10"
             target="_blank"
           >
