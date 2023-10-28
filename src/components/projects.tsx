@@ -10,7 +10,11 @@ function Projects() {
   const { ref } = useSectionInView("Projects", 0.25);
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <section
+      ref={ref}
+      id="projects"
+      className="scroll-mt-28 mb-28 flex flex-col items-center"
+    >
       <SectionHeader>My Project</SectionHeader>
 
       <div>

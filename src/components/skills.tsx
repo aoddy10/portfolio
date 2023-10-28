@@ -24,7 +24,7 @@ function Skills() {
     <section
       ref={ref}
       id="skills"
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-[53rem] scroll-mt-28 text-center flex flex-col items-center sm:mb-40"
     >
       <SectionHeader>My Skills</SectionHeader>
 

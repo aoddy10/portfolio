@@ -1,5 +1,4 @@
 import React from "react";
-import { useScroll } from "framer-motion";
 
 type SectionHeaderProps = {
   children: React.ReactNode;
@@ -7,7 +6,7 @@ type SectionHeaderProps = {
 
 function SectionHeader({ children }: SectionHeaderProps) {
   return (
-    <h2 className=" font-medium text-3xl capitalize mb-8 text-center">
+    <h2 className=" font-bold text-3xl capitalize mb-8 text-center t-gradient">
       {children}
     </h2>
   );

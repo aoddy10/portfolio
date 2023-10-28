@@ -21,7 +21,7 @@ function Experience() {
     <section
       id="experience"
       ref={ref}
-      className="scroll-mt-28 mb-28 sm:mb-40 sm:min-w-[62rem]"
+      className="scroll-mt-28 mb-28 flex flex-col items-center sm:mb-40 sm:min-w-[62rem]"
     >
       <SectionHeader>My Experience</SectionHeader>
 
