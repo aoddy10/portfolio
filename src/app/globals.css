@@ -19,43 +19,11 @@ html.dark {
 }
 
 
-.heading-ct1 {
-    @apply text-[84px] font-bold leading-[100%] text-[var(--state-bold)] 
-}
-.heading-1 {
-    @apply text-[72px] font-bold leading-[125%] text-[var(--state-bold)]
-}
-.heading-2 {
-    @apply text-[64px] font-bold leading-[125%] text-[var(--state-bold)]
-}
-.heading-3 {
-    @apply text-[56px] font-bold leading-[125%] text-[var(--state-bold)]
-}
-.heading-4 {
-    @apply text-[48px] font-bold leading-[125%] text-[var(--state-bold)]
-}
-.heading-5 {
-    @apply text-[32px] font-bold leading-[125%] text-[var(--state-bold)]
-}
-.heading-6 {
-    @apply text-[24px] font-bold leading-[125%] text-[var(--state-bold)]
-}
-.paragraph-normal {
-    @apply text-[18px] font-[400] leading-[30px] text-[var(--state-bold)]
-}
-.paragraph-sm {
-    @apply text-[16px] font-[400] leading-[24px] text-[var(--state-bold)]
-}
-.paragraph-lg {
-    @apply text-[32px] font-[600] leading-[38px] text-[var(--state-bold)]
-}
-.paragraph-mobile {
-    @apply text-[24px] font-[600] leading-[125%] text-[var(--state-bold)]
-}
+
 
 /* color */
 .bg-gradient {
-    @apply bg-gradient-to-r from-[#B16CEA] via-[14%] via-[#FF5E69] via-[44%] via-[#FF8A56] via-[72%] via-[#FFA84B]
+    @apply bg-gradient-to-r from-[#B16CEA] from-[14%] via-[#FF5E69] via-[44%] via-[#FF8A56] via-[72%] via-[#FFA84B] to-[#FFA84B]
 }
 
 /* button */

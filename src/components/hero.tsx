@@ -24,8 +24,9 @@ export default function Hero() {
     <section
       ref={ref}
       id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-96 justify-center items-center"
+      className=" bg-[var(--primary-white)] flex items-center flex-col justify-center p-4 py-24 sm:h-screen sm:w-screen"
     >
+      {/* avatar */}
       <div className="flex justify-center items-center">
         <div className="relative">
           <motion.div
@@ -45,18 +46,32 @@ export default function Hero() {
         </div>
       </div>
 
-      <motion.h1
+      {/* text */}
+      <motion.section
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className=" mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="sm:max-w-[50rem] mt-8 flex flex-col items-center"
       >
-        <span className=" font-bold">Hello, I'm Anirut</span>I am an experienced{" "}
-        <span className=" font-bold">Full Stack Developer</span> with{" "}
-        <span className="font-bold">6 years of experiences</span> based in{" "}
-        <span className=" font-bold">Australia.</span>I possess a diverse range
-        of technical skills.
-      </motion.h1>
+        <h1 className=" text-3xl mb-4 sm:text-4xl !leading-[150%] sm:text-center ">
+          <span className=" font-bold">Hello, I'm Anirut.</span> I am a tech
+          person with 6 years of experiences as
+          <span className=" font-bold"> Full Stack Developer</span> and more
+          than 10 years as{" "}
+          <span className="font-bold">Computer System Engineer.</span>
+        </h1>
+        <p className="sm:max-w-[42rem]">
+          My journey in technology has been marked by a commitment to excellence
+          and a passion for creating impactful solutions. I possess a deep
+          understanding of both front-end and back-end development, utilizing
+          development skills like ReactJS, React Native, Next.js and NodeJS to
+          build high-performance web applications and software systems. In the
+          realm of Computer System and Networking Engineering, I have designed
+          and maintained resilient IT infrastructures, ensuring high
+          availability and efficiency.
+        </p>
+      </motion.section>
 
+      {/* button */}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         animate={{
@@ -66,11 +81,11 @@ export default function Hero() {
             delay: 0.2,
           },
         }}
-        className=" inline-flex flex-col sm:flex-row justify-center gap-3 px-4 text-lg font-medium"
+        className=" inline-flex flex-col sm:flex-row justify-center gap-3 px-4 text-lg font-medium mt-10"
       >
         <Link
           href="#contact"
-          className=" group  bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition"
+          className=" group bg-gradient text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition"
           onClick={() => {
             handleContactButtonClick;
           }}
