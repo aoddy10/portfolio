@@ -53,10 +53,12 @@ html.dark {
     @apply text-[24px] font-[600] leading-[125%] text-[var(--state-bold)]
 }
 
+/* color */
 .bg-gradient {
     @apply bg-gradient-to-r from-[#B16CEA] via-[14%] via-[#FF5E69] via-[44%] via-[#FF8A56] via-[72%] via-[#FFA84B]
 }
 
+/* button */
 .button-primary {
     @apply w-[209px] h-[62px] flex-shrink-0
 }
