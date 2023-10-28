@@ -24,7 +24,7 @@ export default function Hero() {
     <section
       ref={ref}
       id="home"
-      className=" mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-96"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-96 justify-center items-center"
     >
       <div className="flex justify-center items-center">
         <div className="relative">
@@ -39,7 +39,7 @@ export default function Hero() {
             <Image
               src={profileImage}
               alt="Profile Image"
-              className="h-24 w-24 rounded-full border-white border-[0.35rem] object-cover shadow-xl"
+              className="h-32 w-32 rounded-full object-cover shadow-xl"
             />
           </motion.div>
         </div>
@@ -66,7 +66,7 @@ export default function Hero() {
             delay: 0.2,
           },
         }}
-        className="flex flex-col sm:flex-row justify-center gap-3 px-4 text-lg font-medium"
+        className=" inline-flex flex-col sm:flex-row justify-center gap-3 px-4 text-lg font-medium"
       >
         <Link
           href="#contact"
@@ -86,20 +86,22 @@ export default function Hero() {
           Download CV{" "}
           <HiDownload className=" opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a
-          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com/in/anirutpuangkingkaew"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/aoddy10"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
+        <div className=" inline-flex space-x-3 justify-center">
+          <a
+            className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://linkedin.com/in/anirutpuangkingkaew"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            className=" bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://github.com/aoddy10"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );

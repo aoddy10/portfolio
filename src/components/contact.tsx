@@ -21,7 +21,7 @@ function Contact() {
     <motion.section
       ref={ref}
       id="contact"
-      className="mb-28 sm:mb-28 scroll-mt-28 w-[min(100%,38rem)] text-center"
+      className="mb-28 px-2 sm:mb-28 scroll-mt-28 w-[min(100%,38rem)] text-center"
       initial={{
         opacity: 0,
       }}
@@ -63,12 +63,12 @@ function Contact() {
           // reset form
           setData({ email: "", message: "" });
         }}
-        className="mt-10 flex flex-col gap-y-2 dark:text-black"
+        className="mt-10 flex flex-col items-center sm:items-start gap-y-2 dark:text-black"
       >
         <input
           type="email"
           name="senderEmail"
-          className="h-14 rounded-lg borderBlack px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 w-full rounded-lg borderBlack px-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your email"
           value={data.email}
           onChange={(e) => {
@@ -79,7 +79,7 @@ function Contact() {
         />
         <textarea
           name="message"
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 w-full my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           placeholder="Your message"
           value={data.message}
           onChange={(e) => {
