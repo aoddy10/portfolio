@@ -32,7 +32,7 @@ function Experience() {
               contentStyle={{
                 background:
                   theme === "light"
-                    ? "rgba(0,0,0,0.07)"
+                    ? "rgba(255,255,255,0.4)"
                     : "rgba(255,255,255,0.05)",
                 boxShadow: "none",
 
@@ -54,11 +54,29 @@ function Experience() {
               }}
               visible
             >
-              <h3 className=" font-semibold capitalize">{item.title}</h3>
-              <p className="!font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal !text-sm text-gray-400 dark:text-white/50">
-                {item.description}
+              <h3 className=" font-semibold capitalize t-gradient">
+                {item.title}
+              </h3>
+
+              <p className="!font-normal !mt-1 flex flex-wrap items-start gap-2">
+                <span
+                  className="!mt-1 !font-normal !text-sm uppercase whitespace-nowrap text-gray-700 
+                dark:text-white/50"
+                >
+                  {item.company}
+                </span>
+                <span className=" px-2 rounded-md whitespace-nowrap bg-gray-200 dark:bg-gray-400/25">
+                  {item.location}
+                </span>
               </p>
+
+              {item?.tasks?.length > 0 && (
+                <ul className="text-sm text-[var(--primary-black)] mt-2 list-disc pl-8 dark:text-white/80">
+                  {item.tasks.map((task, index) => (
+                    <li key={`index`}>{task}</li>
+                  ))}
+                </ul>
+              )}
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
