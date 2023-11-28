@@ -102,7 +102,7 @@ export default function Hero() {
         <a
           className="group bg-transparent px-7 py-3 flex items-center gap-2 rounded-full outline-none border border-[var(--secondary-black)] font-light focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer 
            dark:bg-white/10 dark:font-thin"
-          href="/Anirut_Puangkingkaew_CV.pdf"
+          href="/Anirut_Puangkingkaew_CV_281123.pdf"
           download
         >
           Download CV{" "}
