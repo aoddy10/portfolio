@@ -42,6 +42,7 @@ function Contact() {
         <a
           className="underline font-semibold"
           href="mailto:anirut.puangkingkaew@gmail.com"
+          aria-label="Contact me by sending email"
         >
           anirut.puangkingkaew@gmail.com
         </a>

@@ -1,4 +1,4 @@
-import {links, skillsData} from './data'
+import {pages} from './data'rom './data'
 
 export type SectionNameType = typeof links[number]['name'];
 
