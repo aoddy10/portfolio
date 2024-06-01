@@ -1,90 +1,100 @@
 function CarouselPage() {
   return (
     <div>
-      {/* <div
-  id="carouselDarkVariant"
-  class="relative"
-  data-twe-carousel-init
-  data-twe-ride="carousel">
-  <!-- Carousel indicators -->
-  <div
-    class="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-    data-twe-carousel-indicators>
-    <button
-      data-twe-target="#carouselDarkVariant"
-      data-twe-slide-to="0"
-      data-twe-carousel-active
-      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-      aria-current="true"
-      aria-label="Slide 1"></button>
-    <button
-      data-twe-target="#carouselDarkVariant"
-      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-      data-twe-slide-to="1"
-      aria-label="Slide 1"></button>
-    <button
-      data-twe-target="#carouselDarkVariant"
-      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-      data-twe-slide-to="2"
-      aria-label="Slide 1"></button>
-  </div>
+      <div id="carouselDarkVariant" className="relative">
+        {/* Carousel indicators */}
+        <div
+          className="absolute inset-x-0 bottom-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+          data-twe-carousel-indicators
+        >
+          <button
+            data-twe-target="#carouselDarkVariant"
+            data-twe-slide-to="0"
+            data-twe-carousel-active
+            className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            data-twe-target="#carouselDarkVariant"
+            className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            data-twe-slide-to="1"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            data-twe-target="#carouselDarkVariant"
+            className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+            data-twe-slide-to="2"
+            aria-label="Slide 1"
+          ></button>
+        </div>
+
+        {/* Carousel items */}
+        <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+          {/* First item */}
+          <div
+            className="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-twe-carousel-fade
+            data-twe-carousel-item
+            data-twe-carousel-active
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"
+              className="block w-full"
+              alt="Motorbike Smoke"
+            />
+            <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
+              <h5 className="text-xl">First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          {/* Second item */}
+          <div
+            className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-twe-carousel-fade
+            data-twe-carousel-item
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp"
+              className="block w-full"
+              alt="Mountaintop"
+            />
+            <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
+              <h5 className="text-xl">Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          {/* Third item */}
+          <div
+            className="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
+            data-twe-carousel-fade
+            data-twe-carousel-item
+          >
+            <img
+              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"
+              className="block w-full"
+              alt="Woman Reading a Book"
+            />
+            <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
+              <h5 className="text-xl">Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 
+  
+  
 
   <!-- Carousel items -->
-  <div
-    class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-    <!-- First item -->
-    <div
-      class="relative float-left -mr-[100%] w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-fade
-      data-twe-carousel-item
-      data-twe-carousel-active>
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"
-        class="block w-full"
-        alt="Motorbike Smoke" />
-      <div
-        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
-        <h5 class="text-xl">First slide label</h5>
-        <p>
-          Some representative placeholder content for the first slide.
-        </p>
-      </div>
-    </div>
-    <!-- Second item -->
-    <div
-      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-fade
-      data-twe-carousel-item>
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp"
-        class="block w-full"
-        alt="Mountaintop" />
-      <div
-        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
-        <h5 class="text-xl">Second slide label</h5>
-        <p>
-          Some representative placeholder content for the second slide.
-        </p>
-      </div>
-    </div>
-    <!-- Third item -->
-    <div
-      class="relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-twe-carousel-fade
-      data-twe-carousel-item>
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(40).webp"
-        class="block w-full"
-        alt="Woman Reading a Book" />
-      <div
-        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
-        <h5 class="text-xl">Third slide label</h5>
-        <p>
-          Some representative placeholder content for the third slide.
-        </p>
-      </div>
-    </div>
-  </div>
+  
 
   <!-- Carousel controls - prev item-->
   <button

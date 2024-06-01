@@ -10,15 +10,15 @@ import Skills from "@/components/skills";
 export default function Home() {
   return (
     <main className=" flex flex-col items-center px4">
-      <CarouselPage />
+      {/* <CarouselPage /> */}
 
-      {/* <Hero />
+      <Hero />
       <Divider />
       <About />
       <Projects />
       <Skills />
       <Experience />
-      <Contact /> */}
+      <Contact />
     </main>
   );
 }
