@@ -45,7 +45,7 @@ export default function Hero() {
       >
         <h1 className=" text-3xl mb-4 sm:text-4xl !leading-[150%] text-center ">
           <span className=" font-bold t-gradient ">Hello, I'm Anirut.</span> I
-          am a tech person with 6 years of experiences as
+          am a tech person with 7 years of experiences as
           <span className=" font-bold t-gradient">
             {" "}
             Full Stack Developer
