@@ -47,10 +47,6 @@ function ProjectPage() {
     });
   }, [api]);
 
-  // const plugin = React.useRef(
-  //   Autoplay({ delay: 2000, stopOnInteraction: true })
-  // );
-
   return (
     <Carousel
       id="projects"
@@ -64,8 +60,8 @@ function ProjectPage() {
       <CarouselContent className="m-0">
         {projectsData.map((_, index) => (
           <CarouselItem key={index} className={cn("p-0", bgColor[index])}>
-            <div className=" relative h-[100vh]  bg-gradient-radial from-transparent to-black/60 text-white w-full flex items-center p-10">
-              <div className="flex flex-col gap-5 w-[45%] items-start">
+            <div className=" relative h-full lg:h-[100vh] pt-32 md:pt-10 bg-gradient-radial from-transparent to-black/60 text-white w-full md:flex items-center p-10">
+              <div className="flex flex-col gap-5 md:w-[45%] items-start">
                 <h2 className=" uppercase text-lg font-bold">{_.subtitle}</h2>
                 <h1 className=" uppercase text-7xl font-extrabold">
                   {_.title}
@@ -91,37 +87,37 @@ function ProjectPage() {
                 </Button>
               </div>
 
-              <div className="absolute left-[50%] p-4">
+              <div className="md:absolute left-[50%] p-4">
                 <Image
                   src={_.imageUrl}
                   alt={_.title}
-                  className=" h-[500px] w-[100%] object-cover object-left rounded-xl"
+                  className=" h-[500px] w-[100%] object-cover object-left rounded-xl pt-10 pb-20"
                 />
+              </div>
+
+              <div className="md:fixed bottom-0 flex flex-col px-5 mr-7 w-full text-white z-[999]">
+                <div className=" flex justify-between">
+                  <CarouselPrevious className=" left-10 relative w-12 h-12" />
+                  <div className=" flex gap-1">
+                    {projectsData.map((_, index) => (
+                      <div
+                        key={index}
+                        className={cn(
+                          " w-10 h-2",
+                          index === current - 1 ? " bg-white" : " bg-white/10"
+                        )}
+                      ></div>
+                    ))}
+                  </div>
+                  <CarouselNext className=" right-10 relative w-12 h-12" />
+                </div>
+
+                <Footer />
               </div>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-
-      <div className="fixed bottom-0 flex flex-col px-5 mr-7 w-full text-white">
-        <div className=" flex justify-between">
-          <CarouselPrevious className=" left-10 relative w-12 h-12" />
-          <div className=" flex gap-1">
-            {projectsData.map((_, index) => (
-              <div
-                key={index}
-                className={cn(
-                  " w-10 h-2",
-                  index === current - 1 ? " bg-white" : " bg-white/10"
-                )}
-              ></div>
-            ))}
-          </div>
-          <CarouselNext className=" right-10 relative w-12 h-12" />
-        </div>
-
-        <Footer />
-      </div>
     </Carousel>
   );
 }

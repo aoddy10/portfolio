@@ -26,7 +26,10 @@ function ExperiencePage() {
       >
         <SectionHeader>My Experience</SectionHeader>
 
-        <VerticalTimeline lineColor="" className=" text-[var(--primary-white)]">
+        <VerticalTimeline
+          lineColor=""
+          className=" text-[var(--primary-black)] lg:text-[var(--primary-white)]"
+        >
           {experiencesData.map((item, index) => (
             <React.Fragment key={index}>
               <VerticalTimelineElement

@@ -3,15 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionHeader from "./section-header";
-import { useSectionInView } from "@/lib/hooks/useSectionInView";
 
 function About() {
-  const { ref } = useSectionInView("About", 1);
-
   return (
     <motion.section
       id="about"
-      ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{
         opacity: 1,
@@ -20,7 +16,7 @@ function About() {
           delay: 0.2,
         },
       }}
-      className="mb-28 p-4 max-w-[45rem] flex flex-col items-center sm:mb-40 text-lg leading-8 scroll-mt-28"
+      className="mb-28 p-4 max-w-[45rem] flex flex-col items-center sm:mb-40 text-lg leading-8 scroll-mt-28 text-[var(--primary-white)] font-light"
     >
       <SectionHeader>About</SectionHeader>
 
