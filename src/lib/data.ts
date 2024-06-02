@@ -3,6 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
+import saasai from "../../public/saas-ai.png";
 import urgence from "../../public/urgence.png";
 import massageBookingApp from "../../public/massage-booking-app.png";
 import smmsReportApp from "../../public/smms-report.png";
@@ -135,19 +136,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "People collapsed detection and notify system.",
-    subtitle: "Python and Machine Learning",
+    title: "SAAS AI Platform",
+    subtitle: "AI-Driven Content Creation with Seamless Payment Integration",
+    description:
+      "SaaS AI platform, developed with Next.js, uses OpenAI's API to generate chat, images, video, music, and code. Integrated with Stripe for seamless payment and subscription management, it provides versatile AI-driven content creation with ease. From automating interactions to producing multimedia, our platform ensures high-quality outputs effortlessly.",
+    tags: [
+      "Generative AI",
+      "OpenAI API",
+      "Next.js",
+      "Stripe API",
+      "Prisma",
+      "Postgres",
+    ],
+    imageUrl: saasai,
+    bgImage: "",
+    color1: "#27437f",
+    color2: "#263791",
+    link: "https://idf-saas-ai.vercel.app",
+  },
+  {
+    subtitle: "People collapsed detection and notify system.",
+    title: "Python and Machine Learning",
     description:
       "In a Python project, I showcased my AI and Machine Learning skills by utilizing TensorFlow to detect falls in Raspberry Pi camera footage and send real-time alerts through a Flutter app.",
     tags: ["Python", "Tensorflow", "Firebase", "Raspberry-PI", "Open-CV"],
     imageUrl: urgence,
-    bgImage: "/emergency-bg.jpg",
-    color1: "#27437f",
-    color2: "#263791",
+    bgImage: "",
+    color1: "#57343a",
+    color2: "#2f1b3f",
+    link: "",
   },
   {
-    title: "Massage Booking Management System",
-    subtitle: "Mobile App with React Native",
+    subtitle: "Massage Booking Management System",
+    title: "Mobile App with React Native",
     description:
       "Utilizing React Native, I designed a cross-platform mobile app for a massage business, simplifying booking and issue recording. It provides payment management and analytics tools, empowering data-driven decisions.",
     tags: [
@@ -163,12 +184,13 @@ export const projectsData = [
     ],
     imageUrl: massageBookingApp,
     bgImage: "",
-    color1: "#27437f",
-    color2: "#263791",
+    color1: "#276055",
+    color2: "#0e826b",
+    link: "",
   },
   {
-    title: "Project management System",
     subtitle: "Manage team and control budget",
+    title: "Project management System",
     description:
       "Created a project management system with ReactJS, Node.js, and MySQL integration, empowering managers with performance analysis and cost tools, highlighting my full-stack development expertise.",
     tags: [
@@ -185,10 +207,11 @@ export const projectsData = [
     bgImage: "",
     color1: "#27437f",
     color2: "#263791",
+    link: "",
   },
   {
-    title: "Student Management System",
-    subtitle: "Modern React Project",
+    subtitle: "Student Management System",
+    title: "Modern React Project",
     description:
       "Developed a Student Management System using AwareIM, expanded it with the SMMS Report via ReactJS and Node.js, and integrated it with Moodle for data transfer efficiency. Docker and Git were employed for deployment and collaboration.",
     tags: [
@@ -205,6 +228,7 @@ export const projectsData = [
     bgImage: "",
     color1: "#27437f",
     color2: "#263791",
+    link: "",
   },
 ] as const;
 
