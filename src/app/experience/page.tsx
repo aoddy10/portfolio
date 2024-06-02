@@ -18,7 +18,7 @@ function ExperiencePage() {
   const { theme } = useThemeContext();
 
   return (
-    <main className="flex flex-col items-center  p-32">
+    <main className="flex flex-col items-center  p-24 md:p-32">
       <section
         id="experience"
         ref={ref}

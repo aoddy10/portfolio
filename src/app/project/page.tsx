@@ -60,10 +60,12 @@ function ProjectPage() {
       <CarouselContent className="m-0">
         {projectsData.map((_, index) => (
           <CarouselItem key={index} className={cn("p-0", bgColor[index])}>
-            <div className=" relative h-full lg:h-[100vh] pt-32 md:pt-10 bg-gradient-radial from-transparent to-black/60 text-white w-full md:flex items-center p-10">
+            <div className=" relative h-full lg:h-[100vh] pt-24 md:pt-10 bg-gradient-radial from-transparent to-black/60 text-white w-full md:flex items-center p-4 md:p-10">
               <div className="flex flex-col gap-5 md:w-[45%] items-start">
-                <h2 className=" uppercase text-lg font-bold">{_.subtitle}</h2>
-                <h1 className=" uppercase text-7xl font-extrabold">
+                <h2 className=" uppercase text-sm md:text-lg md:font-bold">
+                  {_.subtitle}
+                </h2>
+                <h1 className=" uppercase text-5xl md:text-7xl font-extrabold">
                   {_.title}
                 </h1>
                 <p className=" w-full font-thin text-sm leading-6">
@@ -81,13 +83,20 @@ function ProjectPage() {
                   ))}
                 </div>
 
-                <Button className="text-lg font-light p-0">
-                  <SquareArrowDownRight className=" mr-2" strokeWidth={0.5} />
-                  Take A Look
-                </Button>
+                {_.link && (
+                  <a href={_.link} target="_blank">
+                    <Button className="text-lg font-light p-0">
+                      <SquareArrowDownRight
+                        className=" mr-2"
+                        strokeWidth={0.5}
+                      />
+                      Take A Look
+                    </Button>
+                  </a>
+                )}
               </div>
 
-              <div className="md:absolute left-[50%] p-4">
+              <div className="md:absolute left-[50%] md:p-4">
                 <Image
                   src={_.imageUrl}
                   alt={_.title}
@@ -95,9 +104,9 @@ function ProjectPage() {
                 />
               </div>
 
-              <div className="md:fixed bottom-0 flex flex-col px-5 mr-7 w-full text-white z-[999]">
+              <div className="md:fixed bottom-0 flex flex-col  md:px-5 mr-7 w-full text-white z-[999]">
                 <div className=" flex justify-between">
-                  <CarouselPrevious className=" left-10 relative w-12 h-12" />
+                  <CarouselPrevious className=" left-0 md:left-[2rem] relative w-12 h-12" />
                   <div className=" flex gap-1">
                     {projectsData.map((_, index) => (
                       <div
@@ -109,7 +118,7 @@ function ProjectPage() {
                       ></div>
                     ))}
                   </div>
-                  <CarouselNext className=" right-10 relative w-12 h-12" />
+                  <CarouselNext className=" right-0 md:right-[6rem] relative w-12 h-12" />
                 </div>
 
                 <Footer />
