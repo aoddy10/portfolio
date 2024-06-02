@@ -25,17 +25,19 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className={`${fontSans.className} text-[var(--secondary-black)] bg-[var(--primary-white)] relative dark:bg-[var(--primary-black)] dark:text-[var(--primary-white)]`}
+        className={`${fontSans.className} text-[var(--secondary-black)] bg-[var(--primary-color)] relative`}
       >
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            {/* <Footer /> */}
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+        <div className=" bg-gradient-radial from-transparent to-black/60">
+          <ThemeContextProvider>
+            <ActiveSectionContextProvider>
+              <Header />
+              {children}
+              {/* <Footer /> */}
+              <Toaster position="top-right" />
+              <ThemeSwitch />
+            </ActiveSectionContextProvider>
+          </ThemeContextProvider>
+        </div>
       </body>
     </html>
   );

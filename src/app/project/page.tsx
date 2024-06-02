@@ -16,6 +16,8 @@ import Footer from "../../components/footer";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { useSectionInView } from "@/lib/hooks/useSectionInView";
+import { useThemeContext } from "@/context/theme-context";
 
 const bgColor = [
   "bg-gradient-to-r from-[#27437f] to-[#263791]",
@@ -26,6 +28,8 @@ const bgColor = [
 ];
 
 function ProjectPage() {
+  const { ref } = useSectionInView("Projects", 0.2);
+  const { theme } = useThemeContext();
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -49,6 +53,8 @@ function ProjectPage() {
 
   return (
     <Carousel
+      id="projects"
+      ref={ref}
       setApi={setApi}
       // plugins={[plugin.current]}
       className="w-[100vw]"

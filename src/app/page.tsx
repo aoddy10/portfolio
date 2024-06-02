@@ -1,20 +1,31 @@
+"use client";
+
 import About from "@/components/about";
 
 import Contact from "@/components/contact";
 import Divider from "@/components/divider";
-import Experience from "@/components/experience";
+
 import Hero from "@/components/hero";
 
 import Skills from "@/components/skills";
+import { useThemeContext } from "@/context/theme-context";
+import { useSectionInView } from "@/lib/hooks/useSectionInView";
 
 export default function Home() {
+  const { ref } = useSectionInView("Home", 0.2);
+  const { theme } = useThemeContext();
+
   return (
-    <main className="  bg-[#27437f]">
-      <div className="flex flex-col items-center bg-gradient-radial from-transparent to-black/50">
-        <Hero />
-        <Skills />
-        <Contact />
-      </div>
+    <main
+      id="home"
+      ref={ref}
+      className="flex flex-col items-center bg-gradient-radial from-transparent to-black/50"
+    >
+      <Hero />
+      <Divider />
+      <Skills />
+
+      <Contact />
     </main>
   );
 }

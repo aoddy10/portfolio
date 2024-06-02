@@ -14,8 +14,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className=" bg-[var(--primary-white)] flex items-center flex-col justify-center p-4 py-24 sm:h-screen sm:w-screen
-      dark:bg-[var(--primary-black)]"
+      className=" flex items-center flex-col justify-center p-4 py-24 sm:h-screen sm:w-screen
+      "
     >
       {/* avatar */}
       <div className="flex justify-center items-center">
@@ -55,10 +55,7 @@ export default function Hero() {
             Computer System Engineer.
           </span>
         </h1>
-        <p
-          className="sm:max-w-[42rem] text-center font-light
-        dark:font-thin"
-        >
+        <p className="sm:max-w-[42rem] text-center font-thin">
           I have a strong background in technology, excelling in both front-end
           and back-end development and specializing in high-performance web
           applications, software systems, and resilient IT infrastructure design
@@ -76,19 +73,19 @@ export default function Hero() {
             delay: 0.2,
           },
         }}
-        className=" inline-flex flex-col sm:flex-row justify-center gap-3 px-4 text-lg font-medium mt-10"
+        className=" inline-flex flex-col sm:flex-row justify-center gap-4 px-4 text-lg font-medium mt-10"
       >
         <Link
           href="#contact"
-          className=" group bg-[var(--secondary-black)] text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition font-thin
-          dark:bg-[var(--secondary-white)] dark:text-[var(--secondary-black)] dark:font-light"
+          className=" group  text-[var(--primary-white)] px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition font-light
+          dark:bg-[var(--secondary-white)] dark:text-[var(--secondary-black)]"
         >
-          GET IN TOUCH{" "}
           <BsArrowRight className=" opacity-70 group-hover:translate-x-1 transition" />
+          GET IN TOUCH{" "}
         </Link>
         <a
           aria-label="Checking my resume for more information"
-          className="group bg-transparent px-7 py-3 flex items-center gap-2 rounded-full outline-none border border-[var(--secondary-black)] font-light focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer 
+          className="group bg-transparent px-7 py-3 flex items-center gap-2 rounded-full outline-none border border-[var(--secondary-white)] font-light focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer 
            dark:bg-white/10 dark:font-thin text-white"
           href="/Anirut_Puangkingkaew_CV_update.pdf"
           download
@@ -100,7 +97,7 @@ export default function Hero() {
         <div className=" inline-flex space-x-3 justify-center">
           <a
             aria-label="Check out my LinkedIn profile for more professional information and connection."
-            className="  p-4 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-[--secondary-black] bg-transparent dark:bg-white/10 dark:text-white/60"
+            className=" aspect-square  p-4 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125  active:scale-105 transition cursor-pointer bg-white/20 dark:text-white/60"
             href="https://linkedin.com/in/anirutpuangkingkaew"
             target="_blank"
           >
@@ -108,7 +105,7 @@ export default function Hero() {
           </a>
           <a
             aria-label="Check out my development practice on github"
-            className="  p-4 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-[--secondary-black] bg-transparent dark:bg-white/10 dark:text-white/60"
+            className=" aspect-square  p-4 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125  active:scale-105 transition cursor-pointer bg-white/20 dark:text-white/60"
             href="https://github.com/aoddy10"
             target="_blank"
           >
