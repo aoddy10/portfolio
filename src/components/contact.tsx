@@ -14,12 +14,10 @@ type contactFormType = {
 };
 
 function Contact() {
-  const { ref } = useSectionInView("Contact");
   const [data, setData] = useState<contactFormType>({ email: "", message: "" });
 
   return (
     <motion.section
-      ref={ref}
       id="contact"
       className="mb-28 px-2 sm:mb-28 scroll-mt-28 w-[min(100%,38rem)] flex flex-col items-center"
       initial={{
@@ -37,10 +35,10 @@ function Contact() {
     >
       <SectionHeader>Contact</SectionHeader>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className=" text-white font-thin -mt-6 dark:text-white/80">
         Please contact me at email:{" "}
         <a
-          className="underline font-semibold"
+          className="underline font-semibold ml-2"
           href="mailto:anirut.puangkingkaew@gmail.com"
           aria-label="Contact me by sending email"
         >

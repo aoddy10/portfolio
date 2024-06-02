@@ -209,6 +209,7 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Generative AI",
   "HTML",
   "CSS",
   "JavaScript",
@@ -221,6 +222,8 @@ export const skillsData = [
   "Tailwind",
   "Materia-UI",
   "Bootstrap",
+  "GraphQL",
+  "Prisma",
   "MSSQL",
   "MySQL",
   "MongoDB",

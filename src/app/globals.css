@@ -66,11 +66,21 @@
     }
   }
 
-  /* @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
-  } */
+  /* color */
+  .bg-gradient {
+    @apply bg-gradient-to-r from-[#B16CEA] from-[14%] via-[#FF5E69] via-[44%] via-[#FF8A56] via-[72%] via-[#FFA84B] to-[#FFA84B]
+  }
+
+  .t-gradient {
+    @apply bg-gradient bg-clip-text text-transparent
+  }
+
+
+  /* button */
+  .button-primary {
+    @apply w-[209px] h-[62px] flex-shrink-0
+  }
+
+  .button-secondary {
+    @apply w-[237px] h-[62px] flex-shrink-0 bg-transparent text-[var(--secondary-white)]
+  }

@@ -3,7 +3,7 @@
 import React from "react";
 import SectionHeader from "./section-header";
 import { skillsData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks/useSectionInView";
+
 import { motion } from "framer-motion";
 
 const fadeAnimationsVariants = {
@@ -18,11 +18,8 @@ const fadeAnimationsVariants = {
 };
 
 function Skills() {
-  const { ref } = useSectionInView("Skills", 1);
-
   return (
     <section
-      ref={ref}
       id="skills"
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center flex flex-col items-center sm:mb-40"
     >

@@ -9,20 +9,10 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks/useSectionInView";
-import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Hero() {
-  const { ref } = useSectionInView("Home");
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-
-  const handleContactButtonClick = () => {
-    setActiveSection("Contact");
-    setTimeOfLastClick(Date.now());
-  };
-
   return (
     <section
-      ref={ref}
       id="home"
       className=" bg-[var(--primary-white)] flex items-center flex-col justify-center p-4 py-24 sm:h-screen sm:w-screen
       dark:bg-[var(--primary-black)]"
@@ -51,7 +41,7 @@ export default function Hero() {
       <motion.section
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="sm:max-w-[50rem] mt-8 flex flex-col items-center"
+        className="sm:max-w-[50rem] mt-8 flex flex-col items-center text-white"
       >
         <h1 className=" text-3xl mb-4 sm:text-4xl !leading-[150%] text-center ">
           <span className=" font-bold t-gradient ">Hello, I'm Anirut.</span> I
@@ -92,9 +82,6 @@ export default function Hero() {
           href="#contact"
           className=" group bg-[var(--secondary-black)] text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition font-thin
           dark:bg-[var(--secondary-white)] dark:text-[var(--secondary-black)] dark:font-light"
-          onClick={() => {
-            handleContactButtonClick;
-          }}
         >
           GET IN TOUCH{" "}
           <BsArrowRight className=" opacity-70 group-hover:translate-x-1 transition" />
@@ -102,7 +89,7 @@ export default function Hero() {
         <a
           aria-label="Checking my resume for more information"
           className="group bg-transparent px-7 py-3 flex items-center gap-2 rounded-full outline-none border border-[var(--secondary-black)] font-light focus:scale-110 hover:scale-110 hover:bg-grey-950 active:scale-105 transition cursor-pointer 
-           dark:bg-white/10 dark:font-thin"
+           dark:bg-white/10 dark:font-thin text-white"
           href="/Anirut_Puangkingkaew_CV_update.pdf"
           download
         >
@@ -113,7 +100,7 @@ export default function Hero() {
         <div className=" inline-flex space-x-3 justify-center">
           <a
             aria-label="Check out my LinkedIn profile for more professional information and connection."
-            className="  p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-[--secondary-black] bg-transparent dark:bg-white/10 dark:text-white/60"
+            className="  p-4 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-[--secondary-black] bg-transparent dark:bg-white/10 dark:text-white/60"
             href="https://linkedin.com/in/anirutpuangkingkaew"
             target="_blank"
           >
@@ -121,7 +108,7 @@ export default function Hero() {
           </a>
           <a
             aria-label="Check out my development practice on github"
-            className="  p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-[--secondary-black] bg-transparent dark:bg-white/10 dark:text-white/60"
+            className="  p-4 text-white flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-125 hover:text-gray-950 active:scale-105 transition cursor-pointer border border-[--secondary-black] bg-transparent dark:bg-white/10 dark:text-white/60"
             href="https://github.com/aoddy10"
             target="_blank"
           >
