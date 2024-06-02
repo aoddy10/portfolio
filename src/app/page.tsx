@@ -13,7 +13,6 @@ export default function Home() {
       <div className="flex flex-col items-center bg-gradient-radial from-transparent to-black/50">
         <Hero />
         <Skills />
-        <Experience />
         <Contact />
       </div>
     </main>

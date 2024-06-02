@@ -19,8 +19,8 @@ export const links = [
   },
 
   {
-    name: "Contact",
-    link: "/contact",
+    name: "Experience",
+    link: "/experience",
   },
 ] as const;
 
