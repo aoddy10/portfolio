@@ -6,6 +6,12 @@ const nextConfig = {
   // output: "export",
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "http",
+        hostname: "mdbcdn.b-cdn.net",
+      },
+    ],
   },
 };
 
