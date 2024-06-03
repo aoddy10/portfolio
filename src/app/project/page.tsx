@@ -100,7 +100,7 @@ function ProjectPage() {
                 <Image
                   src={_.imageUrl}
                   alt={_.title}
-                  className=" h-[500px] w-[100%] object-cover object-left rounded-xl pt-10 pb-20"
+                  className=" h-[500px] w-[100%] object-cover object-left rounded-xl pt-10 pb-20 lg:h-[600px] 2xl:h-[720px]"
                 />
               </div>
 

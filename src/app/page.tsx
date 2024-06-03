@@ -19,7 +19,7 @@ export default function Home() {
     <main
       id="home"
       ref={ref}
-      className="flex flex-col items-center bg-gradient-radial from-transparent to-black/50 pt-2 md:pt-10 xl:pt-2"
+      className="flex flex-col items-center bg-gradient-radial from-transparent to-black/50 lg:pt-10"
     >
       <Hero />
       <Divider />
