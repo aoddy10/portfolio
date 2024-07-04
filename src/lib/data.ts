@@ -71,7 +71,7 @@ export const experiencesData = [
       "Collaborate with cross-functional teams, including designers and back-end developers, to deliver high-quality web solutions.",
     ],
     icon: React.createElement(FaReact),
-    date: "Feb 2020 - Mar 2022",
+    date: "Feb 2020 - Jun 2020",
   },
   {
     title: "Bachelor of IT (Mobile application development)",
@@ -96,7 +96,7 @@ export const experiencesData = [
       "Regularly update the school's network system, service servers, and software.",
     ],
     icon: React.createElement(FaReact),
-    date: "Jun 2017 - Feb 2021",
+    date: "Jun 2017 - Jun 2020",
   },
   {
     title: "Diploma of IT (Software development)",
