@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "pages:build": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
@@ -41,6 +42,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.5",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^16.0.0",
     "@types/react-vertical-timeline-component": "^3.3.4",
