@@ -136,4 +136,4 @@ function ProjectPage() {
     );
 }
 
-export const runtime = "edge";
+export default ProjectPage;
