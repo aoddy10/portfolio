@@ -94,5 +94,3 @@ function ExperiencePage() {
 }
 
 export default ExperiencePage;
-
-export const runtime = "edge";
