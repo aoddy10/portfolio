@@ -11,8 +11,6 @@ import Skills from "@/components/skills";
 import { useThemeContext } from "@/context/theme-context";
 import { useSectionInView } from "@/lib/hooks/useSectionInView";
 
-export const runtime = "edge";
-
 export default function Home() {
     const { ref } = useSectionInView("Home", 0.2);
     const { theme } = useThemeContext();
