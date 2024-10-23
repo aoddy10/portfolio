@@ -26,7 +26,6 @@ const bgColor = [
     "bg-gradient-to-r from-[#276055] to-[#0e826b]",
     "bg-gradient-to-r from-[#B84C3B] to-[#D3290E]",
 ];
-
 function ProjectPage() {
     const { ref } = useSectionInView("Projects", 0.2);
     const { theme } = useThemeContext();
@@ -136,4 +135,4 @@ function ProjectPage() {
     );
 }
 
-export const runtime = "edge";
+export default ProjectPage;
