@@ -242,6 +242,7 @@ export const projectsData = [
 
 export const skillsData = [
     "Generative AI",
+    "Go",
     "Python",
     "HTML",
     "CSS",
