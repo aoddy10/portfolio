@@ -11,6 +11,12 @@ import projectManagementApp from "../../public/weera-wissawakan.png";
 import aiResumeAnalyzer from "../../public/ai_resume_analyzer.png";
 import kiwiExplorer from "../../public/kiwi-explorer.png";
 
+import IBM_Data_Analysis_with_Python from "../../public/badges/IBM_Data_Analysis_with_Python.png";
+import AWS_AWS_Educate_Machine_Learning_Foundations from "../../public/badges/AWS_AWS_Educate_Machine_Learning_Foundations.png";
+import IBM_Generative_AI_and_LLMs_Architecture_and_DataPreparation from "../../public/badges/IBM_Generative_AI_and_LLMs_Architecture_and_DataPreparation.png";
+import IBM_Machine_Learning_with_Python from "../../public/badges/IBM_Machine_Learning_with_Python_(V2).png";
+import IBM_Generative_AI_Foundational_Models_for_NLP from "../../public/badges/IBM_Generative_AI_Foundational_Models_for_NLP_&_Language_Understanding.png";
+
 export const links = [
     {
         name: "Home",
@@ -317,37 +323,35 @@ export const badgesData = [
         title: "Generative AI Foundational Models for NLP & Language Understanding",
         description:
             "Credential earned from IBM Developer Skills Network via Coursera. Covers NLP, Transformers, and Foundational LLMs.",
-        imageUrl:
-            "/badges/IBM_Generative AI Foundational Models for NLP & Language Understanding.png",
+        imageUrl: IBM_Generative_AI_Foundational_Models_for_NLP,
         url: "https://www.credly.com/badges/adbeac0e-a000-4a9f-bb79-92b6c83fd9c7",
     },
     {
         title: "AWS Machine Learning Foundations",
         description:
             "AWS Educate program for fundamental ML knowledge including supervised, unsupervised learning, and data handling.",
-        imageUrl: "/badges/AWS_AWS Educate Machine Learning Foundations.png",
+        imageUrl: AWS_AWS_Educate_Machine_Learning_Foundations,
         url: "https://www.credly.com/badges/181ba467-399b-4cca-b01c-426f884ebee9",
     },
     {
         title: "Data Analysis with Python",
         description:
             "IBM credential via Coursera covering pandas, numpy, data wrangling and basic visualization with matplotlib.",
-        imageUrl: "/badges/IBM_Data Analysis with Python.png",
+        imageUrl: IBM_Data_Analysis_with_Python,
         url: "https://www.credly.com/badges/39bc8422-795e-4499-a827-eaf3f4ed2497",
     },
     {
         title: "Machine Learning with Python (V2)",
         description:
             "Covers supervised/unsupervised ML, scikit-learn pipelines, and evaluation methods with Python (IBM Digital Credential).",
-        imageUrl: "/badges/IBM_Machine Learning with Python (V2).png",
+        imageUrl: IBM_Machine_Learning_with_Python,
         url: "https://www.credly.com/badges/27ddb523-3524-435e-ac4e-dd011cf97f41",
     },
     {
         title: "Generative AI and LLMs: Architecture and Data Preparation",
         description:
             "IBM credential focusing on LLM architecture, prompt engineering, embeddings and vector stores.",
-        imageUrl:
-            "/badges/IBM_Generative AI and LLMs- Architecture and Data Preparation.png",
+        imageUrl: IBM_Generative_AI_and_LLMs_Architecture_and_DataPreparation,
         url: "https://www.credly.com/badges/83d8bb14-9db0-49b5-bd10-a2413b3387a1",
     },
 ] as const;
