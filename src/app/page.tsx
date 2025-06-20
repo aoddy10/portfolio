@@ -1,6 +1,7 @@
 "use client";
 
 import About from "@/components/about";
+import Badges from "@/components/badge-section";
 
 import Contact from "@/components/contact";
 import Divider from "@/components/divider";
@@ -24,6 +25,7 @@ export default function Home() {
             <Hero />
             <Divider />
             <Skills />
+            <Badges />
             <About />
             <Contact />
         </main>
