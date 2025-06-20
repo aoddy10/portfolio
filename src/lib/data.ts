@@ -8,6 +8,8 @@ import urgence from "../../public/urgence.png";
 import massageBookingApp from "../../public/massage-booking-app.png";
 import smmsReportApp from "../../public/smms-report.png";
 import projectManagementApp from "../../public/weera-wissawakan.png";
+import aiResumeAnalyzer from "../../public/ai_resume_analyzer.png";
+import kiwiExplorer from "../../public/kiwi-explorer.png";
 
 export const links = [
     {
@@ -142,6 +144,47 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: "AI Resume Analyzer",
+        subtitle: "AI-powered job matching with OpenAI & LangChain",
+        description:
+            "Developed a full-stack AI web app that analyzes resumes and compares them with job descriptions. Integrated OpenAI GPT-3.5 and LangChain for semantic gap analysis, with export options in Markdown and PDF. Built with FastAPI, Next.js, and Tailwind CSS.",
+        tags: [
+            "FastAPI",
+            "Next.js",
+            "LangChain",
+            "OpenAI",
+            "Tailwind CSS",
+            "TypeScript",
+            "Docker",
+            "TDD",
+        ],
+        imageUrl: aiResumeAnalyzer,
+        bgImage: "",
+        color1: "#1F2937",
+        color2: "#0F172A",
+        link: "https://github.com/aoddy10/ai-resume-analyzer",
+    },
+    {
+        title: "Kiwi Explorer",
+        subtitle: "Tourism Information Web App",
+        description:
+            "Built a responsive web platform that showcases tourist attractions in New Zealand. Includes user authentication, location info, image galleries, and interactive maps. Developed with Next.js App Router and Tailwind, with Clerk.dev integration.",
+        tags: [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "Shadcn-UI",
+            "Clerk.dev",
+            "Framer Motion",
+            "Responsive Design",
+        ],
+        imageUrl: kiwiExplorer,
+        bgImage: "",
+        color1: "#047857",
+        color2: "#065F46",
+        link: "https://github.com/aoddy10/yoobee-mse800-kiwiexplorer",
+    },
     {
         title: "SAAS AI Platform",
         subtitle:
