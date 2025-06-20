@@ -8,6 +8,8 @@ import urgence from "../../public/urgence.png";
 import massageBookingApp from "../../public/massage-booking-app.png";
 import smmsReportApp from "../../public/smms-report.png";
 import projectManagementApp from "../../public/weera-wissawakan.png";
+import aiResumeAnalyzer from "../../public/ai_resume_analyzer.png";
+import kiwiExplorer from "../../public/kiwi-explorer.png";
 
 export const links = [
     {
@@ -143,6 +145,47 @@ export const experiencesData = [
 
 export const projectsData = [
     {
+        title: "AI Resume Analyzer",
+        subtitle: "AI-powered job matching with OpenAI & LangChain",
+        description:
+            "Developed a full-stack AI web app that analyzes resumes and compares them with job descriptions. Integrated OpenAI GPT-3.5 and LangChain for semantic gap analysis, with export options in Markdown and PDF. Built with FastAPI, Next.js, and Tailwind CSS.",
+        tags: [
+            "FastAPI",
+            "Next.js",
+            "LangChain",
+            "OpenAI",
+            "Tailwind CSS",
+            "TypeScript",
+            "Docker",
+            "TDD",
+        ],
+        imageUrl: aiResumeAnalyzer,
+        bgImage: "",
+        color1: "#1F2937",
+        color2: "#0F172A",
+        link: "https://github.com/aoddy10/ai-resume-analyzer",
+    },
+    {
+        title: "Kiwi Explorer",
+        subtitle: "Tourism Information Web App",
+        description:
+            "Built a responsive web platform that showcases tourist attractions in New Zealand. Includes user authentication, location info, image galleries, and interactive maps. Developed with Next.js App Router and Tailwind, with Clerk.dev integration.",
+        tags: [
+            "Next.js",
+            "Tailwind CSS",
+            "TypeScript",
+            "Shadcn-UI",
+            "Clerk.dev",
+            "Framer Motion",
+            "Responsive Design",
+        ],
+        imageUrl: kiwiExplorer,
+        bgImage: "",
+        color1: "#047857",
+        color2: "#065F46",
+        link: "https://github.com/aoddy10/yoobee-mse800-kiwiexplorer",
+    },
+    {
         title: "SAAS AI Platform",
         subtitle:
             "AI-Driven Content Creation with Seamless Payment Integration",
@@ -267,4 +310,44 @@ export const skillsData = [
     "MongoDB",
     "AWS",
     "AwareIM",
+] as const;
+
+export const badgesData = [
+    {
+        title: "Generative AI Foundational Models for NLP & Language Understanding",
+        description:
+            "Credential earned from IBM Developer Skills Network via Coursera. Covers NLP, Transformers, and Foundational LLMs.",
+        imageUrl:
+            "/badges/IBM_Generative AI Foundational Models for NLP & Language Understanding.png",
+        url: "https://www.credly.com/badges/adbeac0e-a000-4a9f-bb79-92b6c83fd9c7",
+    },
+    {
+        title: "AWS Machine Learning Foundations",
+        description:
+            "AWS Educate program for fundamental ML knowledge including supervised, unsupervised learning, and data handling.",
+        imageUrl: "/badges/AWS_AWS Educate Machine Learning Foundations.png",
+        url: "https://www.credly.com/badges/181ba467-399b-4cca-b01c-426f884ebee9",
+    },
+    {
+        title: "Data Analysis with Python",
+        description:
+            "IBM credential via Coursera covering pandas, numpy, data wrangling and basic visualization with matplotlib.",
+        imageUrl: "/badges/IBM_Data Analysis with Python.png",
+        url: "https://www.credly.com/badges/39bc8422-795e-4499-a827-eaf3f4ed2497",
+    },
+    {
+        title: "Machine Learning with Python (V2)",
+        description:
+            "Covers supervised/unsupervised ML, scikit-learn pipelines, and evaluation methods with Python (IBM Digital Credential).",
+        imageUrl: "/badges/IBM_Machine Learning with Python (V2).png",
+        url: "https://www.credly.com/badges/27ddb523-3524-435e-ac4e-dd011cf97f41",
+    },
+    {
+        title: "Generative AI and LLMs: Architecture and Data Preparation",
+        description:
+            "IBM credential focusing on LLM architecture, prompt engineering, embeddings and vector stores.",
+        imageUrl:
+            "/badges/IBM_Generative AI and LLMs- Architecture and Data Preparation.png",
+        url: "https://www.credly.com/badges/83d8bb14-9db0-49b5-bd10-a2413b3387a1",
+    },
 ] as const;
