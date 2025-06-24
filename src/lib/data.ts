@@ -158,12 +158,10 @@ export const projectsData = [
         tags: [
             "FastAPI",
             "Next.js",
-            "LangChain",
             "OpenAI",
             "Tailwind CSS",
             "TypeScript",
             "Docker",
-            "TDD",
         ],
         imageUrl: aiResumeAnalyzer,
         bgImage: "",
@@ -175,13 +173,11 @@ export const projectsData = [
         title: "Kiwi Explorer",
         subtitle: "Tourism Information Web App",
         description:
-            "Built a responsive web platform that showcases tourist attractions in New Zealand. Includes user authentication, location info, image galleries, and interactive maps. Developed with Next.js App Router and Tailwind, with Clerk.dev integration.",
+            "Built a responsive web platform that showcases tourist attractions in New Zealand. Includes user authentication, location info, image galleries, and interactive maps. Developed with React App Router and Tailwind.",
         tags: [
-            "Next.js",
+            "React",
             "Tailwind CSS",
             "TypeScript",
-            "Shadcn-UI",
-            "Clerk.dev",
             "Framer Motion",
             "Responsive Design",
         ],
@@ -324,27 +320,13 @@ export const badgesData = [
         description:
             "Credential earned from IBM Developer Skills Network via Coursera. Covers NLP, Transformers, and Foundational LLMs.",
         imageUrl: IBM_Generative_AI_Foundational_Models_for_NLP,
-        url: "https://www.credly.com/badges/adbeac0e-a000-4a9f-bb79-92b6c83fd9c7",
+        url: "https://www.credly.com/badges/83d8bb14-9db0-49b5-bd10-a2413b3387a1",
     },
     {
         title: "AWS Machine Learning Foundations",
         description:
             "AWS Educate program for fundamental ML knowledge including supervised, unsupervised learning, and data handling.",
         imageUrl: AWS_AWS_Educate_Machine_Learning_Foundations,
-        url: "https://www.credly.com/badges/181ba467-399b-4cca-b01c-426f884ebee9",
-    },
-    {
-        title: "Data Analysis with Python",
-        description:
-            "IBM credential via Coursera covering pandas, numpy, data wrangling and basic visualization with matplotlib.",
-        imageUrl: IBM_Data_Analysis_with_Python,
-        url: "https://www.credly.com/badges/39bc8422-795e-4499-a827-eaf3f4ed2497",
-    },
-    {
-        title: "Machine Learning with Python (V2)",
-        description:
-            "Covers supervised/unsupervised ML, scikit-learn pipelines, and evaluation methods with Python (IBM Digital Credential).",
-        imageUrl: IBM_Machine_Learning_with_Python,
         url: "https://www.credly.com/badges/27ddb523-3524-435e-ac4e-dd011cf97f41",
     },
     {
@@ -352,6 +334,20 @@ export const badgesData = [
         description:
             "IBM credential focusing on LLM architecture, prompt engineering, embeddings and vector stores.",
         imageUrl: IBM_Generative_AI_and_LLMs_Architecture_and_DataPreparation,
-        url: "https://www.credly.com/badges/83d8bb14-9db0-49b5-bd10-a2413b3387a1",
+        url: "https://www.credly.com/badges/39bc8422-795e-4499-a827-eaf3f4ed2497",
+    },
+    {
+        title: "Machine Learning with Python (V2)",
+        description:
+            "Covers supervised/unsupervised ML, scikit-learn pipelines, and evaluation methods with Python (IBM Digital Credential).",
+        imageUrl: IBM_Machine_Learning_with_Python,
+        url: "https://www.credly.com/badges/181ba467-399b-4cca-b01c-426f884ebee9",
+    },
+    {
+        title: "Data Analysis with Python",
+        description:
+            "IBM credential via Coursera covering pandas, numpy, data wrangling and basic visualization with matplotlib.",
+        imageUrl: IBM_Data_Analysis_with_Python,
+        url: "https://www.credly.com/badges/adbeac0e-a000-4a9f-bb79-92b6c83fd9c7",
     },
 ] as const;
