@@ -10,6 +10,8 @@ import smmsReportApp from "../../public/smms-report.png";
 import projectManagementApp from "../../public/weera-wissawakan.png";
 import aiResumeAnalyzer from "../../public/ai_resume_analyzer.png";
 import kiwiExplorer from "../../public/kiwi-explorer.png";
+import favourLogo from "../../public/logos/favour_logo.webp";
+// video is served from the public/ folder at runtime; reference via URL below instead of importing the file
 
 import IBM_Data_Analysis_with_Python from "../../public/badges/IBM_Data_Analysis_with_Python.png";
 import AWS_AWS_Educate_Machine_Learning_Foundations from "../../public/badges/AWS_AWS_Educate_Machine_Learning_Foundations.png";
@@ -33,6 +35,22 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+    {
+        title: "Full Stack Engineer",
+        location: "Auckland, New Zealand",
+        company: "Favour",
+        tasks: [
+            "Assist in building and maintaining a cross-platform mobile app using React Native, focusing on responsive UI for both iOS and Android.",
+            "Integrated Redux Toolkit to manage shared state across components efficiently.",
+            "Connected frontend interfaces with Django-based backend APIs to support features like recipe browsing and meal planning.",
+            "Contributed to RESTful API development, MySQL schema design, and AWS Lambda setup for backend scalability.",
+            "Helped implement key features such as user authentication, meal customisation, and real-time order tracking.",
+            "Participated in sprint planning, code reviews, and team discussions following agile methodology.",
+            "Explored AI integration opportunities within the app’s workflow to enhance user experience.",
+        ],
+        icon: React.createElement(FaReact),
+        date: "July 2025 - Present",
+    },
     {
         title: "Master of Software Engineering",
         location: "Auckland, New Zealand",
@@ -130,6 +148,28 @@ export const experiencesData = [
 
 export const projectsData = [
     {
+        title: "Favour Recipe Import Feature",
+        subtitle: "TikTok & Photo-Based Recipe Import for Favour",
+        description:
+            "Contributed as a Full Stack Engineer to design, build, and ship a production recipe import feature for Favour, a New Zealand food and lifestyle app. Implemented recipe ingestion from TikTok URLs and from cookbook or recipe card photos, connecting React Native interfaces with Django APIs and AWS serverless pipelines backed by MySQL for reliable data processing across iOS and Android.",
+        tags: [
+            "React Native",
+            "Redux",
+            "Django",
+            "AWS",
+            "MySQL",
+            "Serverless Framework",
+        ],
+        imageUrl: favourLogo,
+        bgImage: "../../public/images/favour_bg.png",
+        color1: "#7C3AED",
+        color2: "#4C1D95",
+        link: "https://www.tryfavour.com/",
+        logo: favourLogo,
+        videoUrl:
+            "https://amzn-s3-idevtify-public-bucket.s3.ap-southeast-2.amazonaws.com/Favour_App_Feature_Teaser.mp4",
+    },
+    {
         title: "AI Resume Analyzer",
         subtitle: "AI-powered job matching with OpenAI & LangChain",
         description:
@@ -147,6 +187,8 @@ export const projectsData = [
         color1: "#1F2937",
         color2: "#0F172A",
         link: "https://github.com/aoddy10/ai-resume-analyzer",
+        logo: "",
+        videoUrl: "",
     },
     {
         title: "Kiwi Explorer",
@@ -165,6 +207,8 @@ export const projectsData = [
         color1: "#047857",
         color2: "#065F46",
         link: "https://github.com/aoddy10/yoobee-mse800-kiwiexplorer",
+        logo: "",
+        videoUrl: "",
     },
     {
         title: "SAAS AI Platform",
@@ -185,6 +229,8 @@ export const projectsData = [
         color1: "#27437f",
         color2: "#263791",
         link: "https://idf-saas-ai.vercel.app",
+        logo: "",
+        videoUrl: "",
     },
     {
         subtitle: "People collapsed detection and notify system.",
@@ -197,6 +243,8 @@ export const projectsData = [
         color1: "#57343a",
         color2: "#2f1b3f",
         link: "",
+        logo: "",
+        videoUrl: "",
     },
     {
         subtitle: "Massage Booking Management System",
@@ -219,6 +267,8 @@ export const projectsData = [
         color1: "#276055",
         color2: "#0e826b",
         link: "",
+        logo: "",
+        videoUrl: "",
     },
     {
         subtitle: "Manage team and control budget",
@@ -240,6 +290,8 @@ export const projectsData = [
         color1: "#27437f",
         color2: "#263791",
         link: "",
+        logo: "",
+        videoUrl: "",
     },
     {
         subtitle: "Student Management System",
@@ -261,6 +313,8 @@ export const projectsData = [
         color1: "#27437f",
         color2: "#263791",
         link: "",
+        logo: "",
+        videoUrl: "",
     },
 ] as const;
 

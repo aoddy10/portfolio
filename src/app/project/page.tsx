@@ -53,8 +53,8 @@ function ProjectPage() {
             setApi={setApi}
             // plugins={[plugin.current]}
             className="w-[100vw]"
-            // onMouseEnter={plugin.current.stop}
-            // onMouseLeave={plugin.current.reset}
+        // onMouseEnter={plugin.current.stop}
+        // onMouseLeave={plugin.current.reset}
         >
             <CarouselContent className="m-0">
                 {projectsData.map((_, index) => (
@@ -64,6 +64,14 @@ function ProjectPage() {
                     >
                         <div className=" relative h-full lg:h-[100vh] pt-24 md:pt-10 bg-gradient-radial from-transparent to-black/60 text-white w-full md:flex items-center p-4 md:p-10">
                             <div className="flex flex-col gap-5 md:w-[45%] items-start">
+                                {_.logo && (
+                                    <Image
+                                        src={_.logo}
+                                        alt={_.title + " logo"}
+                                        className=" h-12 w-auto object-contain"
+                                    />
+                                )}
+
                                 <h2 className=" uppercase text-sm md:text-lg md:font-bold">
                                     {_.subtitle}
                                 </h2>
@@ -78,7 +86,7 @@ function ProjectPage() {
                                     {_.tags.map((tag) => (
                                         <span
                                             key={tag}
-                                            className=" border-white border px-2 py-1 text-sm rounded-md"
+                                            className=" border-white border px-2 py-1 text-sm rounded-md hover:bg-white/70 hover:text-black hover:border-white/10 transition-colors duration-300 cursor-default"
                                         >
                                             {tag}
                                         </span>
@@ -98,13 +106,26 @@ function ProjectPage() {
                                 )}
                             </div>
 
-                            <div className="md:absolute left-[50%] md:p-4">
-                                <Image
-                                    src={_.imageUrl}
-                                    alt={_.title}
-                                    className=" h-[500px] w-[100%] object-cover object-left rounded-xl pt-10 pb-20 lg:h-[600px] 2xl:h-[720px]"
-                                />
-                            </div>
+                            {/* Display video if available, otherwise display image */}
+                            {_.videoUrl ? (
+                                <div className="md:absolute left-[50%] md:p-4 rounded-xl overflow-hidden">
+                                    <video
+                                        src={_.videoUrl}
+                                        autoPlay
+                                        loop
+                                        muted
+                                        className=" h-[500px] w-[100%] object-contain pt-10 pb-20 lg:h-[600px] 2xl:h-[720px]"
+                                    />
+                                </div>
+                            ) : (
+                                <div className="md:absolute left-[50%] md:p-4">
+                                    <Image
+                                        src={_.imageUrl}
+                                        alt={_.title}
+                                        className=" h-[500px] w-[100%] object-contain rounded-xl pt-10 pb-20 lg:h-[600px] 2xl:h-[720px]"
+                                    />
+                                </div>
+                            )}
 
                             <div className="md:fixed bottom-0 flex flex-col  md:px-5 mr-7 w-full text-white z-[999]">
                                 <div className=" flex justify-between">
