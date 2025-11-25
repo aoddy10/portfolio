@@ -114,7 +114,7 @@ function ProjectPage() {
                     autoPlay
                     loop
                     muted
-                    className=" h-[500px] w-[100%] object-cover md:object-contain pt-10 pb-20 lg:h-[600px] 2xl:h-[720px]"
+                    className=" h-[500px] w-[100%] object-contain pt-10 pb-20 lg:h-[600px] 2xl:h-[720px]"
                   />
                 </div>
               ) : (
@@ -122,7 +122,7 @@ function ProjectPage() {
                   <Image
                     src={_.imageUrl}
                     alt={_.title}
-                    className=" h-[500px] w-[100%] object-cover sm:object-contain rounded-xl pt-10 pb-20 lg:h-[600px] 2xl:h-[720px]"
+                    className=" h-[500px] w-[100%] object-cover sm:object-contain object-left rounded-xl pt-10 pb-20 lg:h-[600px] 2xl:h-[720px]"
                   />
                 </div>
               )}
