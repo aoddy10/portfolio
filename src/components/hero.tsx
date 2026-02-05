@@ -19,7 +19,7 @@ export default function Hero() {
         >
             {/* avatar */}
             <div className="flex justify-center items-center">
-                <div className="relative">
+                <div className="relative sm:mt-32 md:mt-24 lg:mt-24">
                     <motion.div
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
