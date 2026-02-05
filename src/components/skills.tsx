@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeader from "./section-header";
 import { skillsData } from "@/lib/data";
 
-import { motion } from "@/lib/motion";
+import { motion } from "framer-motion";
 
 const fadeAnimationsVariants = {
   initial: { opacity: 0, y: 100 },
