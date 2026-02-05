@@ -19,7 +19,7 @@ export default function Hero() {
         >
             {/* avatar */}
             <div className="flex justify-center items-center">
-                <div className="relative">
+                <div className="relative sm:mt-32 md:mt-24 lg:mt-24">
                     <motion.div
                         initial={{ scale: 0, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
@@ -62,27 +62,25 @@ export default function Hero() {
                     <span className=" font-bold t-gradient ">
                         Hello, I'm Anirut.
                     </span>{" "}
-                    a Full Stack Developer with a growing focus on{" "}
+                    a Software Engineer / Full Stack Developer with{" "}
                     <span className=" font-bold t-gradient">
                         {" "}
-                        AI/ML technology.
+                        7+ years of experience
                     </span>{" "}
-                    I enjoy building useful, scalable web apps and exploring
-                    real-world applications of{" "}
+                    delivering web applications, backend
+                    systems, and cloud-based solutions across education, SaaS, and startup environments in{" "}
                     <span className=" font-bold t-gradient">
                         {" "}
-                        machine learning.
+                        Australia and New Zealand.
                     </span>
                 </h1>
 
                 <p className="sm:max-w-[42rem] text-center font-thin">
-                    Passionate about clean code, automation, and using AI to
-                    solve practical problems. Actively seeking a role in AI/ML
-                    or full-stack development. I have a strong background in
-                    technology, excelling in both front-end and back-end
-                    development and specializing in high-performance web
-                    applications, software systems, and resilient IT
-                    infrastructure design and maintenance.
+                    Strong hands-on expertise in React, Node.js, Django, and AWS, with proven ability to design APIs, integrate
+                    complex systems, and deliver production-ready solutions in small, high-ownership teams. Experienced work-
+                    ing end-to-end from requirements to deployment, collaborating closely with product and design stakeholders.
+                    Seeking Intermediate to Senior Software Engineer roles where I can take ownership of features and contribute
+                    to technical decision-making.
                 </p>
             </motion.section>
 
