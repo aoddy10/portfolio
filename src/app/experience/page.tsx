@@ -80,7 +80,7 @@ function ExperiencePage() {
                                 {item?.tasks?.length > 0 && (
                                     <ul className="text-sm text-[var(--primary-black)] mt-2 list-disc pl-8 dark:text-white/80 font-light">
                                         {item.tasks.map((task, index) => (
-                                            <li key={`index`}>{task}</li>
+                                            <li key={`task-${index}`}>{task}</li>
                                         ))}
                                     </ul>
                                 )}

@@ -49,7 +49,7 @@ export const experiencesData = [
             "Explored AI integration opportunities within the app’s workflow to enhance user experience.",
         ],
         icon: React.createElement(FaReact),
-        date: "July 2025 - Present",
+        date: "July 2025 - Nov 2025",
     },
     {
         title: "Master of Software Engineering",
@@ -57,7 +57,7 @@ export const experiencesData = [
         company: "Yoobee College of Creative Innovation",
         tasks: [],
         icon: React.createElement(LuGraduationCap),
-        date: "Nov 2024 - Present (Expected Nov 2025)",
+        date: "Nov 2024 - Nov 2025",
     },
     {
         title: "Full Stack Developer / System Engineer",
