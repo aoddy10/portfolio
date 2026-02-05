@@ -4,7 +4,7 @@ import React from "react";
 import SectionHeader from "./section-header";
 import { badgesData } from "@/lib/data";
 
-import { motion } from "framer-motion";
+import { motion } from "@/lib/motion";
 import Image from "next/image";
 import { Card } from "./ui/card";
 
