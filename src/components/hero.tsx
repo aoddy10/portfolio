@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import profileImage from "../../public/profileImage.png";
-import { motion } from "@/lib/motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
@@ -61,25 +61,27 @@ export default function Hero() {
                     <span className=" font-bold t-gradient ">
                         Hello, I'm Anirut.
                     </span>{" "}
-                    a Software Engineer / Full Stack Developer with{" "}
+                    a Full Stack Developer with a growing focus on{" "}
                     <span className=" font-bold t-gradient">
                         {" "}
-                        7+ years of experience
+                        AI/ML technology.
                     </span>{" "}
-                    delivering web applications, backend
-                    systems, and cloud-based solutions across education, SaaS, and startup environments in{" "}
+                    I enjoy building useful, scalable web apps and exploring
+                    real-world applications of{" "}
                     <span className=" font-bold t-gradient">
                         {" "}
-                        Australia and New Zealand.
+                        machine learning.
                     </span>
                 </h1>
 
                 <p className="sm:max-w-[42rem] text-center font-thin">
-                    Strong hands-on expertise in React, Node.js, Django, and AWS, with proven ability to design APIs, integrate
-                    complex systems, and deliver production-ready solutions in small, high-ownership teams. Experienced work-
-                    ing end-to-end from requirements to deployment, collaborating closely with product and design stakeholders.
-                    Seeking Intermediate to Senior Software Engineer roles where I can take ownership of features and contribute
-                    to technical decision-making.
+                    Passionate about clean code, automation, and using AI to
+                    solve practical problems. Actively seeking a role in AI/ML
+                    or full-stack development. I have a strong background in
+                    technology, excelling in both front-end and back-end
+                    development and specializing in high-performance web
+                    applications, software systems, and resilient IT
+                    infrastructure design and maintenance.
                 </p>
             </motion.section>
 

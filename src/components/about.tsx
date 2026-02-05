@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "@/lib/motion";
+import { motion } from "framer-motion";
 import SectionHeader from "./section-header";
 
 function About() {

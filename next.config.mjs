@@ -1,11 +1,10 @@
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    outputFileTracingRoot: __dirname,
-};
+const nextConfig = {};
+
+if (process.env.NODE_ENV === "development") {
+    await setupDevPlatform();
+}
 
 export default nextConfig;
