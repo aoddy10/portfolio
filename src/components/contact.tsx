@@ -38,7 +38,7 @@ function Contact() {
     >
       <SectionHeader>Contact</SectionHeader>
 
-      <p className=" text-white font-thin -mt-6 dark:text-white/80">
+      <p className=" text-white font-thin -mt-6 dark:text-white/80 text-center">
         Please contact me at email:{" "}
         <a
           className="underline font-semibold ml-2"
