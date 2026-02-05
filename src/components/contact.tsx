@@ -14,7 +14,10 @@ type contactFormType = {
 };
 
 function Contact() {
-  const [data, setData] = useState<contactFormType>({ email: "", message: "" });
+  const [data, setData] = useState<contactFormType>({
+    email: "",
+    message: "",
+  });
 
   return (
     <motion.section
@@ -44,11 +47,11 @@ function Contact() {
         >
           anirut.puangkingkaew@gmail.com
         </a>
-        <br />
-        or through the contact form below.
+        {/* <br />
+                or through the contact form below. */}
       </p>
 
-      <form
+      {/* <form
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -89,7 +92,7 @@ function Contact() {
         />
 
         <SubmitBtn />
-      </form>
+      </form> */}
     </motion.section>
   );
 }

@@ -32,6 +32,7 @@ export default function Hero() {
                             src={profileImage}
                             alt="Profile Image"
                             className="h-40 w-40 rounded-full object-cover shadow-xl"
+                            priority
                         />
                     </motion.div>
                 </div>
