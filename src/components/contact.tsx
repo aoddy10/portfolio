@@ -51,7 +51,7 @@ function Contact() {
                 or through the contact form below. */}
       </p>
 
-      <form
+      {/* <form
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -92,7 +92,7 @@ function Contact() {
         />
 
         <SubmitBtn />
-      </form>
+      </form> */}
     </motion.section>
   );
 }
