@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import SectionHeader from "./section-header";
 import { useSectionInView } from "@/lib/hooks/useSectionInView";
-import { motion } from "framer-motion";
+import { motion } from "@/lib/motion";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
