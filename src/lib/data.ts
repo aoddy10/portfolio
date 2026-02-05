@@ -10,6 +10,8 @@ import smmsReportApp from "../../public/smms-report.png";
 import projectManagementApp from "../../public/weera-wissawakan.png";
 import aiResumeAnalyzer from "../../public/ai_resume_analyzer.png";
 import kiwiExplorer from "../../public/kiwi-explorer.png";
+import favourLogo from "../../public/logos/favour_logo.webp";
+// video is served from the public/ folder at runtime; reference via URL below instead of importing the file
 
 import IBM_Data_Analysis_with_Python from "../../public/badges/IBM_Data_Analysis_with_Python.png";
 import AWS_AWS_Educate_Machine_Learning_Foundations from "../../public/badges/AWS_AWS_Educate_Machine_Learning_Foundations.png";
@@ -34,6 +36,22 @@ export const links = [
 
 export const experiencesData = [
     {
+        title: "Full Stack Engineer",
+        location: "Auckland, New Zealand",
+        company: "Favour",
+        tasks: [
+            "Assist in building and maintaining a cross-platform mobile app using React Native, focusing on responsive UI for both iOS and Android.",
+            "Integrated Redux Toolkit to manage shared state across components efficiently.",
+            "Connected frontend interfaces with Django-based backend APIs to support features like recipe browsing and meal planning.",
+            "Contributed to RESTful API development, MySQL schema design, and AWS Lambda setup for backend scalability.",
+            "Helped implement key features such as user authentication, meal customisation, and real-time order tracking.",
+            "Participated in sprint planning, code reviews, and team discussions following agile methodology.",
+            "Explored AI integration opportunities within the app’s workflow to enhance user experience.",
+        ],
+        icon: React.createElement(FaReact),
+        date: "July 2025 - Present",
+    },
+    {
         title: "Master of Software Engineering",
         location: "Auckland, New Zealand",
         company: "Yoobee College of Creative Innovation",
@@ -42,19 +60,14 @@ export const experiencesData = [
         date: "Nov 2024 - Present (Expected Nov 2025)",
     },
     {
-        title: "Computer network and systems engineer",
+        title: "Full Stack Developer / System Engineer",
         location: "Sydney, Australia",
         company: "Sydney College",
         tasks: [
-            "Maintain and monitor computer network, school system, and application software.",
-            "Develop and manage SMMS using AngularJS, NodeJS, and Express Framework.",
-            "Design and develop system configurations.",
-            "Develop and maintain school websites with WordPress, PHP, and JavaScript.",
-            "Manage cloud server and student database (AWS EC2 and Hosting).",
-            "Direct system installations, evaluate system operations and manage databases.",
-            "Install and configure computer systems, diagnose hardware/software faults, and solve technical problems.",
-            "Regularly update and maintain school network systems, service servers, and software.",
-            "Provide network inventory, troubleshoot system procedures, and determine equipment repair replacement needs.",
+            "Built a student management system using AwareIM and AWS EC2 for cloud-based data access.",
+            "Created SMMS reporting tools using React, Context API, Node.js and reduced report generation time by 40%.",
+            "Integrated third-party LMS with RESTful APIs, automating result submissions with full accuracy.",
+            "Led cloud migration and CI/CD pipelines for internal tools, enabling continuous delivery.",
         ],
         icon: React.createElement(FaReact),
         date: "Feb 2021 – Sep 2024",
@@ -74,16 +87,12 @@ export const experiencesData = [
     //   date: "Feb 2017 – Present",
     // },
     {
-        title: "Full stack web developer",
+        title: "Web Developer",
         location: "Sydney, Australia",
         company: "The Studio",
         tasks: [
-            "Develop websites using HTML, JavaScript, and PHP, ensuring responsive design and optimal user experience.",
-            "Update and maintain existing websites, implementing enhancements and resolving issues promptly.",
-            "Create a membership system, allowing users to register, log in, and manage their accounts securely.",
-            "Integrate websites with marketing platforms like Active Campaign, automating email campaigns and customer interactions.",
-            "Integrate websites with payment platforms such as Stripe, enabling secure and seamless online transactions.",
-            "Collaborate with cross-functional teams, including designers and back-end developers, to deliver high-quality web solutions.",
+            "Improved website performance and SEO (90+ scores) by refactoring and removing bottlenecks.",
+            "Created a secure membership and payment system with user access control.",
         ],
         icon: React.createElement(FaReact),
         date: "Feb 2020 - Jun 2020",
@@ -97,18 +106,12 @@ export const experiencesData = [
         date: "Oct 2017 - Jun 2020",
     },
     {
-        title: "Computer network and systems engineer",
+        title: "Software & Network Systems Engineer",
         location: "Sydney, Australia",
         company: "Australian International College",
         tasks: [
-            "Maintain and monitor computer networks, school systems, and software/hardware configurations.",
-            "Develop and manage the SMMS (Student Management System) using AngularJS, NodeJS, and Express Framework.",
-            "Design and implement system configurations and installations.",
-            "Create and maintain the school website with WordPress, PHP, and JavaScript.",
-            "Manage cloud servers and student databases on AWS EC2 and Hosting.",
-            "Direct system installations, evaluate operations and oversee database management.",
-            "Install and configure computer systems and diagnose and troubleshoot hardware/software issues.",
-            "Regularly update the school's network system, service servers, and software.",
+            "Implemented internal tools using React, Node.js, PHP, WordPress, and Docker for academic workflows.",
+            "Managed server infrastructure, automated backups, and improved cybersecurity.",
         ],
         icon: React.createElement(FaReact),
         date: "Jun 2017 - Jun 2020",
@@ -122,18 +125,12 @@ export const experiencesData = [
         date: "Jul 2016 - Jun 2017",
     },
     {
-        title: "Computer system engineer",
+        title: "ERP System Developer (Earlier Experience)",
         location: "Chiang Mai, Thailand",
         company: "C.P.D. Sheetboard Co., Ltd.",
         tasks: [
-            "Utilize virtualization technologies like Hyper-V and/or VMWare.",
-            "Design, implement, and manage cloud technologies using Azure and/or AWS.",
-            "Manage Office 365 and SharePoint deployments.",
-            "Plan and implement hardware and software upgrades in existing installations.",
-            "Design hardware and software configurations for new installations.",
-            "Handle network and security tasks, including penetration testing.",
-            "Research network infrastructure requirements and demands.",
-            "Analyse, monitor and optimize system performance.",
+            "Developed a full ERP system in Visual Basic for stock, MRP, and production planning",
+            "Achieved 60% stock reduction and faster lead times with automated planning tools.",
         ],
         icon: React.createElement(CgWorkAlt),
         date: "Aug 2000 - Dec 2013",
@@ -151,6 +148,28 @@ export const experiencesData = [
 
 export const projectsData = [
     {
+        title: "Favour Recipe Import Feature",
+        subtitle: "TikTok & Photo-Based Recipe Import for Favour",
+        description:
+            "Contributed as a Full Stack Engineer to design, build, and ship a production recipe import feature for Favour, a New Zealand food and lifestyle app. Implemented recipe ingestion from TikTok URLs and from cookbook or recipe card photos, connecting React Native interfaces with Django APIs and AWS serverless pipelines backed by MySQL for reliable data processing across iOS and Android.",
+        tags: [
+            "React Native",
+            "Redux",
+            "Django",
+            "AWS",
+            "MySQL",
+            "Serverless Framework",
+        ],
+        imageUrl: favourLogo,
+        bgImage: "../../public/images/favour_bg.png",
+        color1: "#7C3AED",
+        color2: "#4C1D95",
+        link: "https://www.tryfavour.com/",
+        logo: favourLogo,
+        videoUrl:
+            "https://amzn-s3-idevtify-public-bucket.s3.ap-southeast-2.amazonaws.com/Favour_App_Feature_Teaser.mp4",
+    },
+    {
         title: "AI Resume Analyzer",
         subtitle: "AI-powered job matching with OpenAI & LangChain",
         description:
@@ -158,30 +177,28 @@ export const projectsData = [
         tags: [
             "FastAPI",
             "Next.js",
-            "LangChain",
             "OpenAI",
             "Tailwind CSS",
             "TypeScript",
             "Docker",
-            "TDD",
         ],
         imageUrl: aiResumeAnalyzer,
         bgImage: "",
         color1: "#1F2937",
         color2: "#0F172A",
         link: "https://github.com/aoddy10/ai-resume-analyzer",
+        logo: "",
+        videoUrl: "",
     },
     {
         title: "Kiwi Explorer",
         subtitle: "Tourism Information Web App",
         description:
-            "Built a responsive web platform that showcases tourist attractions in New Zealand. Includes user authentication, location info, image galleries, and interactive maps. Developed with Next.js App Router and Tailwind, with Clerk.dev integration.",
+            "Built a responsive web platform that showcases tourist attractions in New Zealand. Includes user authentication, location info, image galleries, and interactive maps. Developed with React App Router and Tailwind.",
         tags: [
-            "Next.js",
+            "React",
             "Tailwind CSS",
             "TypeScript",
-            "Shadcn-UI",
-            "Clerk.dev",
             "Framer Motion",
             "Responsive Design",
         ],
@@ -190,6 +207,8 @@ export const projectsData = [
         color1: "#047857",
         color2: "#065F46",
         link: "https://github.com/aoddy10/yoobee-mse800-kiwiexplorer",
+        logo: "",
+        videoUrl: "",
     },
     {
         title: "SAAS AI Platform",
@@ -210,6 +229,8 @@ export const projectsData = [
         color1: "#27437f",
         color2: "#263791",
         link: "https://idf-saas-ai.vercel.app",
+        logo: "",
+        videoUrl: "",
     },
     {
         subtitle: "People collapsed detection and notify system.",
@@ -222,6 +243,8 @@ export const projectsData = [
         color1: "#57343a",
         color2: "#2f1b3f",
         link: "",
+        logo: "",
+        videoUrl: "",
     },
     {
         subtitle: "Massage Booking Management System",
@@ -244,6 +267,8 @@ export const projectsData = [
         color1: "#276055",
         color2: "#0e826b",
         link: "",
+        logo: "",
+        videoUrl: "",
     },
     {
         subtitle: "Manage team and control budget",
@@ -265,6 +290,8 @@ export const projectsData = [
         color1: "#27437f",
         color2: "#263791",
         link: "",
+        logo: "",
+        videoUrl: "",
     },
     {
         subtitle: "Student Management System",
@@ -286,6 +313,8 @@ export const projectsData = [
         color1: "#27437f",
         color2: "#263791",
         link: "",
+        logo: "",
+        videoUrl: "",
     },
 ] as const;
 
@@ -324,27 +353,13 @@ export const badgesData = [
         description:
             "Credential earned from IBM Developer Skills Network via Coursera. Covers NLP, Transformers, and Foundational LLMs.",
         imageUrl: IBM_Generative_AI_Foundational_Models_for_NLP,
-        url: "https://www.credly.com/badges/adbeac0e-a000-4a9f-bb79-92b6c83fd9c7",
+        url: "https://www.credly.com/badges/83d8bb14-9db0-49b5-bd10-a2413b3387a1",
     },
     {
         title: "AWS Machine Learning Foundations",
         description:
             "AWS Educate program for fundamental ML knowledge including supervised, unsupervised learning, and data handling.",
         imageUrl: AWS_AWS_Educate_Machine_Learning_Foundations,
-        url: "https://www.credly.com/badges/181ba467-399b-4cca-b01c-426f884ebee9",
-    },
-    {
-        title: "Data Analysis with Python",
-        description:
-            "IBM credential via Coursera covering pandas, numpy, data wrangling and basic visualization with matplotlib.",
-        imageUrl: IBM_Data_Analysis_with_Python,
-        url: "https://www.credly.com/badges/39bc8422-795e-4499-a827-eaf3f4ed2497",
-    },
-    {
-        title: "Machine Learning with Python (V2)",
-        description:
-            "Covers supervised/unsupervised ML, scikit-learn pipelines, and evaluation methods with Python (IBM Digital Credential).",
-        imageUrl: IBM_Machine_Learning_with_Python,
         url: "https://www.credly.com/badges/27ddb523-3524-435e-ac4e-dd011cf97f41",
     },
     {
@@ -352,6 +367,20 @@ export const badgesData = [
         description:
             "IBM credential focusing on LLM architecture, prompt engineering, embeddings and vector stores.",
         imageUrl: IBM_Generative_AI_and_LLMs_Architecture_and_DataPreparation,
-        url: "https://www.credly.com/badges/83d8bb14-9db0-49b5-bd10-a2413b3387a1",
+        url: "https://www.credly.com/badges/39bc8422-795e-4499-a827-eaf3f4ed2497",
+    },
+    {
+        title: "Machine Learning with Python (V2)",
+        description:
+            "Covers supervised/unsupervised ML, scikit-learn pipelines, and evaluation methods with Python (IBM Digital Credential).",
+        imageUrl: IBM_Machine_Learning_with_Python,
+        url: "https://www.credly.com/badges/181ba467-399b-4cca-b01c-426f884ebee9",
+    },
+    {
+        title: "Data Analysis with Python",
+        description:
+            "IBM credential via Coursera covering pandas, numpy, data wrangling and basic visualization with matplotlib.",
+        imageUrl: IBM_Data_Analysis_with_Python,
+        url: "https://www.credly.com/badges/adbeac0e-a000-4a9f-bb79-92b6c83fd9c7",
     },
 ] as const;

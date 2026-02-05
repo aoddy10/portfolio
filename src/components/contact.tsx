@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import SectionHeader from "./section-header";
 import { useSectionInView } from "@/lib/hooks/useSectionInView";
-import { motion } from "framer-motion";
+import { motion } from "@/lib/motion";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
@@ -14,7 +14,10 @@ type contactFormType = {
 };
 
 function Contact() {
-  const [data, setData] = useState<contactFormType>({ email: "", message: "" });
+  const [data, setData] = useState<contactFormType>({
+    email: "",
+    message: "",
+  });
 
   return (
     <motion.section
@@ -44,8 +47,8 @@ function Contact() {
         >
           anirut.puangkingkaew@gmail.com
         </a>
-        <br />
-        or through the contact form below.
+        {/* <br />
+                or through the contact form below. */}
       </p>
 
       <form
